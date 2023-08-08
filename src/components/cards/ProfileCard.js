@@ -11,15 +11,7 @@ const Card = ({ text, subtext, link }) => {
   )
 }
 
-// Button.defaultProps = {
-//   color: 'steelblue',
-// }
 
-// Card.propTypes = {
-//   text: PropTypes.string,
-//   color: PropTypes.string,
-//   onClick: PropTypes.func,
-// }
 
 export default Card;
 
