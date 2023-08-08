@@ -298,3 +298,25 @@ a{
   font-weight:300;
   padding-right: 45px;
 }
+
+/* mobile  */
+@media only screen and (max-width: 600px) {
+  .mainSection{
+    display: block;
+  }
+
+  .mainSection3{
+    display: block;
+  }
+
+  .header{
+    display: block;
+  }
+  
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+}
+
+/*tablet*/
