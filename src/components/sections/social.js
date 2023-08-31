@@ -5,12 +5,13 @@ import { getIcon} from '@iconify/react';
 import instagramIcon from '@iconify/icons-mdi/instagram';
 import twitterIcon from '@iconify/icons-mdi/twitter';
 import githubIcon from '@iconify/icons-mdi/github';
+import linkedinIcon from '@iconify/icons-mdi/linkedin';
 
 
 const instag = instagramIcon ;
 const tweet = twitterIcon;
 const github = githubIcon ;
-const linkedIn =getIcon("mdi:linkedin");
+const linkedIn =linkedinIcon;
 // const test = getIcon('mdi:github');
 
 

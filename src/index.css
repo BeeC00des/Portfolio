@@ -19,6 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 12px 35px;
+  /* border:1px solid red; */
 } 
 
 .mainSection{
@@ -301,22 +302,89 @@ a{
 
 /* mobile  */
 @media only screen and (max-width: 600px) {
-  .mainSection{
+  /* .header{
     display: block;
+  }  */
+  .mainSection{
+    display:block;
+    height:auto;
+  }
+
+  .section2{
+    display:block;
+  }
+
+  .section1,  .section3 {
+    width:100%;
+    margin:10px 5px;
+  }
+
+
+  .section4 {
+    width:100%;
+  }
+
+  .skillNav{
+    display:block;
+  }
+
+  .sectionHeader{
+    display:block;
+  }
+
+  .projectNav{
+    display: block;
+  }
+
+  .profileImg{
+    width:100%;
+    height:100%;
   }
 
   .mainSection3{
-    display: block;
+    display:block;
+    margin: 30px 10px 0px;
   }
 
-  .header{
-    display: block;
+  .mediaSection{
+    display:block;
+    padding: 40px 15px;
+    height: auto;
   }
+
+  .sectionSocial{
+    width:100%;
+  }
+
+ .footerList{
+  display: flex;
+  justify-content:space-between;
+  padding: 10px;
+ }
+
+ .layer{
+  display: block;
+  padding:0px;
+ }
+
+ .card{
+  width:100%;
+  margin:15px 0px;
+ }
+
+ .card2{
+  width:100%;
+  margin:15px 0px;
+ }
+ .footerItem{
+  padding-right: 5px;
+ }
   
 }
 
+/*tablet*/
+/* 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
 
-}
+} */
 
-/*tablet*/

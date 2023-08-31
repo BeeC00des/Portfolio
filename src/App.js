@@ -54,6 +54,7 @@ function App() {
         <Footer footerItem="Netlify"/>
       </div>
     </Router>
+    
   );
 }
 
