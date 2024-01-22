@@ -3,16 +3,17 @@ import './App.css';
 import { BrowserRouter as Router, Route,Routes, } from 'react-router-dom';
 
 import Home from '../src/pages/Home';
-import Others from '../src/pages/Others';
+import Community from './pages/Community';
 
 
 function App() {
+  
   return (
 
     <Router>
       <Routes>   
       <Route path="/" element={<Home />}/>
-      <Route path="other" element={<Others />} />
+      <Route path="Community" element={<Community />} />
       </Routes>
     </Router>
 

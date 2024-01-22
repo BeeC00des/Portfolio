@@ -36,11 +36,9 @@ const Project = ({ mainText, onClick }) => {
                 <Card title="Todo Track app" year="2023" text="This application keep todo logs per time"/>
                 <Card title="Appointment Booking app" year="2023" text="Easy to use application for appointment schedule"/>
               </div>
-                
             </div>
         </div> 
-    </div>
-   
+    </div> 
     </>
   )
 }

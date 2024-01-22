@@ -6,7 +6,8 @@ import About from '../components/sections/About';
 import Skill from '../components/sections/skillset';
 import Project from '../components/sections/project';
 import Story from '../components/sections/story';
-import Social from '../components/sections/social'
+import Social from '../components/sections/social';
+// import { Link } from 'react-router-dom';
 
 function Home() {
     return (
