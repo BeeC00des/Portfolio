@@ -13,13 +13,18 @@ body {
   background-color: #010001;
 }
 
+.testContainer{
+  color:rgba(255, 255, 255, 0.89);
+  font-family: 'Space Mono', monospace;
+  background-color: #010001;
+}
+
 .header {
   font-size: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 12px 35px;
-  /* border:1px solid red; */
 } 
 
 .mainSection{

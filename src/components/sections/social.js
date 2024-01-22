@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import SocialBtn from '../Buttons/socialBtn';
-import { getIcon} from '@iconify/react';
+// import { getIcon} from '@iconify/react';
 
 import instagramIcon from '@iconify/icons-mdi/instagram';
 import twitterIcon from '@iconify/icons-mdi/twitter';

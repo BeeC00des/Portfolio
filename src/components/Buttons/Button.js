@@ -1,4 +1,5 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Button = ({ color, text, onClick }) => {
   return (
@@ -7,7 +8,7 @@ const Button = ({ color, text, onClick }) => {
       // style={{ backgroundColor: color }}
       className='btn'
     >
-      {text}
+      <Link to={{ pathname: '/other' }}>{text}</Link>
     </button>
   )
 }

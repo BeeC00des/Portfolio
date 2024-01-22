@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 // import { useLocation } from 'react-router-dom'
 // import Button from './Button'
 import Navbar from './Nav';
-import Resume from '../../assets/images/Resume.pdf'
+import Resume from '../../assets/images/Resume-soft.pdf'
 
 
 
@@ -17,7 +17,7 @@ const Header = ({ title, onAdd}) => {
       <div className='section2'>
         <Navbar navItem="Project" />
         <Navbar navItem="Skill" />
-        <a href={Resume} download="MyResume" target='_blank'>
+        <a href={Resume} download="MyResume" target='_blank' without rel="noreferrer">
           <Navbar navItem="Resume" />
         </a>
         <Navbar navItem="Gallery" />
