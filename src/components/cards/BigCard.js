@@ -1,17 +1,23 @@
 import PropTypes from 'prop-types'
 import Button from "../Buttons/Button"
+// import { BrowserRouter as  Link } from 'react-router-dom';
 
 
 
 const Card = ({ text, year, title, onClick }) => {
-  const data = [
-    {
-      "0": "https://zacraclearning.com",
-      "1": "https://www.trialoguemedia.com/",
-      "2": "https://roberttaylormedia.com/",
-      "3": 'https://tender-pare-05e51b.netlify.app/'
-    }
+
+  const urls = [
+      "https://zacraclearning.com",
+      "https://www.trialoguemedia.com",
+      "https://roberttaylormedia.com",
+      "https://tender-pare-05e51b.netlify.app/"
+    
   ];
+
+const openInNewTab = (url) => {
+  window.open(url, "noreferrer");
+};
+
 
 
   return (
@@ -21,14 +27,11 @@ const Card = ({ text, year, title, onClick }) => {
           <span class="supText">{year}</span>
           <p className='cardTitle'>{title}</p>
           <p className='cardText'>{text}</p>
-          
-          {/* <ul>
-            {data.map((item,i) => {
-              return <li>{item[i]}</li>;
-            })}
-          </ul> */}
-
-          <Button text="Demo" link ="https://roberttaylormedia.com"/>
+          <div>
+            {urls.map((url, index) => (  
+             <Button key={index}  text='Demo'  onClick={() => openInNewTab(url)}/>
+             ))}
+          </div>
         </div>
       </div>
     </div>

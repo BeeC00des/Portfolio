@@ -16,9 +16,6 @@ const Project = ({ mainText, onClick }) => {
                 <Navbar  navItem="Speaking engagement"  />
           </div>
       </div>
-        
-        
-
         <div class="sectiond">
             <div className="cardSection">
               <div class="layer">
