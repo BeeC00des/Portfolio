@@ -35,10 +35,17 @@ function Home() {
     for organizations. Check my Works" />
 
 
-            <Skill mainText="Skill" />
-            <Project mainText="Projects" />
+            <div id="skill-section">
+              <Skill mainText="Skill" />
+            </div>
+            
+            <div id="project-section">
+              <Project mainText="Projects" />
+            </div>
 
-            <Story mainText="Experiences & volunteering" paraText="passionate and lives" />
+            <div id="gallery-section">
+              <Story mainText="Experiences & volunteering" paraText="passionate and lives" />
+            </div>
 
             <Social
                 mainText="Get In Touch"
