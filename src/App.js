@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route,Routes, } from 'react-router-dom';
 
 import Home from '../src/pages/Home';
 import Community from './pages/Community';
+import Test from './pages/test';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <Routes>   
       <Route path="/" element={<Home />}/>
+      <Route path="/test" element={<Test />}/>
       <Route path="Community" element={<Community />} />
       </Routes>
     </Router>
@@ -20,7 +22,5 @@ function App() {
   );
 }
 
-{/* <Link to="/other">Go to Other Component</Link> */}
-{/* <Route path="/other" element={<Others/>}/> */}
 
 export default App;
