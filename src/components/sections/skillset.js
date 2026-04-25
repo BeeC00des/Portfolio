@@ -27,16 +27,20 @@ const Skill = ({ mainText, onClick }) => {
           <div class="skillNav textColor">
             <Tabs defaultValue="techskills" className="flex flex-col w-full">
 
-              <TabsList>
-                <TabsTrigger value="techskills">
-                
-                  <h2 className="navItem mb-2">
+              <TabsList className="gap-2 mb-4">
+                <TabsTrigger 
+                  value="techskills" 
+                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors"
+                >
+                  <h2 className="font-light text-lg text-center m-0">
                     Technical Skills
                   </h2>
                 </TabsTrigger>
-                <TabsTrigger value="softskills">
-              
-                  <h2 className="navItem mb-2">
+                <TabsTrigger 
+                  value="softskills" 
+                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors"
+                >
+                  <h2 className="font-light text-lg text-center m-0">
                     Soft Skills
                   </h2>
                 </TabsTrigger>
