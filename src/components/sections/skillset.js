@@ -30,46 +30,47 @@ const Skill = ({ mainText, onClick }) => {
 
               <TabsList>
                 <TabsTrigger value="account">
-                  <Navbar navItem="Technical Skills" />
+                  Technical Skills
+                  {/* <Navbar navItem="Technical Skills" /> */}
                 </TabsTrigger>
                 <TabsTrigger value="password">
-                  <Navbar navItem="Soft Skills" />
+                  Soft Skills
+                  {/* <Navbar navItem="Soft Skills" /> */}
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="account">
-                <div className="flip">
-                  <div className="layer">
+                <div className="flex flex-col gap-5">
+                  <div className="flex justify-between items-center">
                     <Card img={Logo1} text="Javascript" />
                     <Card img={Logo2} text="Git" />
                     <Card img={Logo3} text="CSS" />
                   </div>
-                  <div class="layer">
+                  <div className="flex justify-between items-center">
                     <Card img={Logo4} text="Html5" />
                     <Card img={Logo5} text="Figma" />
                     <Card img={Logo6} text="Firebase" />
                   </div>
-                  <div class="layer">
+                  <div className="flex justify-between items-center">
                     <Card img={Logo7} text="React" />
                     <Card img={Logo8} text="Vue" />
-                    <Card img={null} text="And Others" />
+                    <Card img={Logo8} text="And Others" />
                   </div>
-
                 </div>
               </TabsContent>
               <TabsContent value="password">
-                <div className="flip">
-                  <div className="layer">
+                <div className="flex flex-col gap-5">
+                  <div className="flex justify-between items-center">
                     <Card img="https://img.icons8.com/fluency/48/communication.png" text="Communication" />
                     <Card img="https://img.icons8.com/fluency/48/user-group-man-man.png" text="Teamwork" />
                     <Card img="https://img.icons8.com/fluency/48/idea.png" text="Problem Solving" />
                   </div>
-                  <div class="layer">
+                  <div className="flex justify-between items-center">
                     <Card img="https://img.icons8.com/fluency/48/process.png" text="Adaptability" />
                     <Card img="https://img.icons8.com/fluency/48/time.png" text="Time Management" />
                     <Card img="https://img.icons8.com/fluency/48/gears.png" text="Critical Thinking" />
                   </div>
-                  <div class="layer">
-                    <Card img="https://img.icons8.com/fluency/48/leader.png" text="Leadership" />
+                  <div className="flex justify-between items-center">
+                     <Card img="https://img.icons8.com/fluency/48/management.png" text="Leadership" />
                     <Card img="https://img.icons8.com/fluency/48/paint-palette.png" text="Creativity" />
                     <Card img="https://img.icons8.com/fluency/48/briefcase.png" text="Work Ethic" />
                   </div>
