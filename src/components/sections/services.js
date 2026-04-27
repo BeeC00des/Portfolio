@@ -20,7 +20,7 @@ const Scribble = () => (
 );
 
 const IdeaRow = ({ crossed, clear }) => (
-  <h2 className="text-[7.5vw] md:text-[4rem] lg:text-[5rem] leading-[1.1] tracking-tight text-white whitespace-nowrap">
+  <h2 className="text-[7.5vw] md:text-[4rem] lg:text-[5rem] leading-[1.1] font-serif tracking-tight text-white whitespace-nowrap">
     Bola is <span className="relative inline-block text-white mx-1 md:mx-2">{crossed}<Scribble /></span> {clear}
   </h2>
 );
@@ -39,7 +39,7 @@ const Services = () => {
         <IdeaRow crossed="drift" clear="a compass" />
       </div>
       {/* New section translating the Figma design */}
-      <div className="flex flex-col items-center text-center mt-32 mb-16 px-6">
+      <div className="flex flex-col items-center font-serif text-center mt-32 mb-16 px-6">
         <h2 className="text-[10vw] md:text-[5rem] lg:text-[6rem] leading-[1.1] tracking-tight text-white mb-6">
           At Cala we <span className="text-[#199C16]">clean</span> data
         </h2>
