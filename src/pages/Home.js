@@ -14,7 +14,7 @@ function Home() {
         <div>  
             <div className='main'>
             <Button
-                text="Say Hello!"
+                text="Book Me"
             />
             </div>
 

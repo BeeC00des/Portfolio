@@ -22,7 +22,7 @@ const Header = ({ title, onAdd}) => {
         <a href={Resume} download="MyResume" target='_blank' rel="noreferrer">
           <Navbar navItem="Resume" />
         </a>
-        <Navbar navItem="Gallery" onClick={() => scrollToElement('gallery-section')} />
+        <Navbar navItem="Services" onClick={() => scrollToElement('gallery-section')} />
       </div>
     </header>
   )
