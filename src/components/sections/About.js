@@ -1,26 +1,57 @@
 import PropTypes from 'prop-types';
-// import SocialBtn from './socialBtn';
+import { useEffect, useRef, useState } from 'react';
 
-const About= ({ mainText, subText, text1, text2, img, onClick }) => {
+const About = ({ mainText, subText, text1, text2 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const currentRef = sectionRef.current;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.2 } // Trigger when 20% of the element is visible
+    );
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
   return (
-    <>
-    <div className='mainSection'>
-        <div class="section1">
-            <div class="section">
+    <div className='mainSection px-[35px] py-0 overflow-hidden' ref={sectionRef}>
+        <div 
+          className={`section1 transition-all duration-1000 ease-out transform ${
+            isVisible ? 'translate-x-0 opacity-100' : '-translate-x-[150px] opacity-0'
+          }`}
+        >
+            <div className="section">
                 <h1 className="bigText">{mainText}</h1>
                 <p className="smallText">{subText}</p>
             </div>
         </div>
 
-        <div class="section3">
-            <div class="section">
+        <div 
+          className={`section3 transition-all duration-1000 ease-out delay-150 transform ${
+            isVisible ? 'translate-x-0 opacity-100' : 'translate-x-[150px] opacity-0'
+          }`}
+        >
+            <div className="section">
                 <p className='aboutText'>{text1}</p>
                 <p className='aboutText'>{text2}</p>
             </div>
         </div> 
     </div>
-   
-    </>
   )
 }
 
