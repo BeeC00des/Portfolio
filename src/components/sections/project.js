@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import Card from '../cards/BigCard'
 import ArticleCard from '../cards/ArticleCard'
+import SpeakerCard from '../cards/SpeakerCard'
 import { Tabs, TabsContent, TabsTrigger, TabsList } from 'components/ui/tabs'
 
 const Project = ({ mainText, onClick }) => {
@@ -109,8 +110,71 @@ const Project = ({ mainText, onClick }) => {
           </TabsContent>
 
           <TabsContent value="speaking">
-            <div className="text-center p-12 text-[#13B90F] font-light text-xl">
-              No speaking engagements available yet.
+            <div className="mt-8 w-full max-w-6xl mx-auto py-10 relative overflow-hidden">
+              
+              <div className="text-center mb-16 max-w-3xl mx-auto relative z-10 px-[35px]">
+                <h2 className="text-[#13B90F] font-bold text-[32px] mb-6 tracking-wide">SPEAKING ENGAGEMENTS</h2>
+                <p className="text-[rgba(255,255,255,0.89)] text-[15px] font-light leading-relaxed">
+                  Sharing knowledge, insights, and innovations with leading minds across the technology industry.
+                </p>
+              </div>
+
+              <div className="flex flex-col md:flex-row justify-between items-start gap-8 pb-10 relative z-10 px-[35px]">
+                
+                {/* Column 1 */}
+                <div className="flex flex-col h-full w-full md:w-1/4">
+                  <SpeakerCard 
+                    name="AVA QUANTUM" 
+                    role="CEO, Neuralink Technologies" 
+                    img="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" 
+                    marginTop="mt-0"
+                  />
+                  <div className="mt-32 hidden md:block">
+                    <h3 className="text-[rgba(255,255,255,0.89)] font-bold text-[28px] leading-tight drop-shadow-lg">
+                      This year, our lineup of speakers is impressive.
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Column 2 */}
+                <div className="w-full md:w-1/4">
+                  <SpeakerCard 
+                    name="MAXWELL STRIDER" 
+                    role="CTO, CyberFuture" 
+                    img="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" 
+                    marginTop="md:mt-16 mt-8"
+                  />
+                </div>
+
+                {/* Column 3 */}
+                <div className="w-full md:w-1/4">
+                  <SpeakerCard 
+                    name="ELEANOR BLAZE" 
+                    role="COO, Quantum Leap" 
+                    img="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" 
+                    marginTop="md:mt-32 mt-8"
+                  />
+                </div>
+
+                {/* Column 4 */}
+                <div className="w-full md:w-1/4">
+                  <SpeakerCard 
+                    name="FELIX ORION" 
+                    role="CEO, Stellar AI Systems" 
+                    img="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" 
+                    marginTop="md:mt-48 mt-8"
+                  />
+                  
+                  {/* Mobile-only text */}
+                  <div className="mt-16 block md:hidden">
+                    <h3 className="text-[rgba(255,255,255,0.89)] font-bold text-2xl leading-tight text-center">
+                      This year, our lineup of speakers is impressive.
+                    </h3>
+                  </div>
+                </div>
+
+              </div>
+              
             </div>
           </TabsContent>
         </Tabs>

@@ -6,9 +6,9 @@ const ArticleCard = ({ title, excerpt, date, readTime, link, img }) => {
       href={link} 
       target="_blank" 
       rel="noreferrer" 
-      className="flex flex-col bg-[#1A1A1A] rounded-xl overflow-hidden shadow-lg border border-[#2A2A2A] hover:border-[#3A3A3A] transition-colors duration-300 w-full h-full text-left"
+      className="flex flex-col bg-[#14171c] rounded-md overflow-hidden shadow-lg border border-transparent hover:border-[#31363B] transition-colors duration-300 w-full h-full text-left"
     >
-      <div className="h-44 w-full overflow-hidden">
+      <div className="h-44 w-full overflow-hidden bg-[#31363B]">
         <img 
           src={img} 
           alt={title} 
@@ -17,14 +17,14 @@ const ArticleCard = ({ title, excerpt, date, readTime, link, img }) => {
       </div>
       <div className="p-5 flex flex-col flex-1 justify-between">
         <div>
-          <h3 className="font-bold text-white text-[1.1rem] leading-tight mb-3">
+          <h3 className="font-bold text-[rgba(255,255,255,0.89)] text-[1.1rem] leading-tight mb-3">
             {title}
           </h3>
-          <p className="text-[#A0A0A0] text-[0.9rem] leading-relaxed mb-6">
+          <p className="text-[13px] font-light text-[rgba(255,255,255,0.6)] leading-relaxed mb-6">
             {excerpt}
           </p>
         </div>
-        <div className="text-[#7A7A7A] text-[0.85rem] font-light">
+        <div className="text-[#13B90F] text-[12px] font-light">
           {date} <span className="mx-1">·</span> {readTime}
         </div>
       </div>
