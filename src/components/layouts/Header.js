@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types'
 import Navbar from './Nav';
 import Resume from '../../assets/images/ResumeSoft.pdf'
+import { Link } from "react-router-dom";
 
-const Header = ({ title, onAdd}) => {
+const Header = ({ title, onAdd }) => {
 
   const scrollToElement = (elementId) => {
     const element = document.getElementById(elementId);
-    if(element) {
+    if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
@@ -22,7 +23,9 @@ const Header = ({ title, onAdd}) => {
         <a href={Resume} download="MyResume" target='_blank' rel="noreferrer">
           <Navbar navItem="Resume" />
         </a>
-        <Navbar navItem="Services" onClick={() => scrollToElement('gallery-section')} />
+        <Link to="/services">
+          <Navbar navItem="Services" />
+        </Link>
       </div>
     </header>
   )
