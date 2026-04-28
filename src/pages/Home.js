@@ -18,7 +18,7 @@ function Home() {
             />
             </div>
 
-            <Header title="BeeC00des" />
+            {/* <Header title="BeeC00des" /> */}
             <About
                 mainText="Hello!"
                 subText="I'm Bolarinwa Ajayi"

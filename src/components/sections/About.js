@@ -14,55 +14,65 @@ const About = ({ mainText, subText, text1, text2 }) => {
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.2 } // Trigger when 20% of the element is visible
+      { threshold: 0.2 }
     );
 
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
+    if (currentRef) observer.observe(currentRef);
 
     return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
 
   return (
-    <div className='mainSection px-[35px] py-0 overflow-hidden' ref={sectionRef}>
-        <div 
-          className={`section1 transition-all duration-1000 ease-out transform ${
-            isVisible ? 'translate-x-0 opacity-100' : '-translate-x-[150px] opacity-0'
-          }`}
-        >
-            <div className="section">
-                <h1 className="bigText">{mainText}</h1>
-                <p className="smallText">{subText}</p>
-            </div>
+    <div
+      ref={sectionRef}
+      className="flex flex-col md:flex-row gap-5 md:gap-8 mx-5 md:mx-9 min-h-[450px] overflow-hidden"
+    >
+      {/* LEFT */}
+      <div
+        className={`flex-1 transition-all duration-1000 ease-out transform ${
+          isVisible
+            ? 'translate-x-0 opacity-100'
+            : '-translate-x-[50px] opacity-0'
+        }`}
+      >
+        <div>
+          <h1 className="text-3xl md:text-5xl font-bold mb-3">
+            {mainText}
+          </h1>
+          <p className="text-base md:text-lg">
+            {subText}
+          </p>
         </div>
+      </div>
 
-        <div 
-          className={`section3 transition-all duration-1000 ease-out delay-150 transform ${
-            isVisible ? 'translate-x-0 opacity-100' : 'translate-x-[150px] opacity-0'
-          }`}
-        >
-            <div className="section">
-                <p className='aboutText'>{text1}</p>
-                <p className='aboutText'>{text2}</p>
-            </div>
-        </div> 
+      {/* RIGHT */}
+      <div
+        className={`flex-1 transition-all duration-1000 ease-out delay-150 transform ${
+          isVisible
+            ? 'translate-x-0 opacity-100'
+            : 'translate-x-[50px] opacity-0'
+        }`}
+      >
+        <div className="space-y-4">
+          <p className="text-sm md:text-base leading-relaxed">
+            {text1}
+          </p>
+          <p className="text-sm md:text-base leading-relaxed">
+            {text2}
+          </p>
+        </div>
+      </div>
     </div>
-  )
-}
-
-// Button.defaultProps = {
-//   color: 'steelblue',
-// }
+  );
+};
 
 About.propTypes = {
-  text: PropTypes.string,
   mainText: PropTypes.string,
-  
-}
+  subText: PropTypes.string,
+  text1: PropTypes.string,
+  text2: PropTypes.string,
+};
 
-export default About
+export default About;

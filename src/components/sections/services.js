@@ -77,7 +77,7 @@ const Services = () => {
           {/* Card 1 */}
           <div className="bg-[#14171c] p-8 md:p-10 rounded-[5px] border border-gray-800">
             <div className="flex items-center gap-3 mb-6 text-sm font-bold text-gray-400 tracking-widest uppercase">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#3BB2EA]"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[#3BB2EA] animate-pulse"></span>
               Accuracy Improvement
             </div>
             <div className="text-6xl md:text-7xl text-[#3BB2EA] font-light tracking-tight mb-6">
@@ -91,7 +91,7 @@ const Services = () => {
           {/* Card 2 */}
           <div className="bg-[#14171c] p-8 md:p-10 rounded-[5px] border border-gray-800">
             <div className="flex items-center gap-3 mb-6 text-sm font-bold text-gray-400 tracking-widest uppercase">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#199C16]"></span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[#199C16] animate-pulse"></span>
               Token Efficiency
             </div>
             <div className="text-6xl md:text-7xl text-[#199C16] font-light tracking-tight mb-6">
