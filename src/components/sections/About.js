@@ -26,22 +26,22 @@ const About = ({ mainText, subText, text1, text2 }) => {
 
   return (
     <div
+      className="h-[450px] mx-auto overflow-hidden flex flex-col md:flex-row gap-4 md:gap-0 lg:px-10 px-3"
       ref={sectionRef}
-      className="flex flex-col md:flex-row gap-5 md:gap-8 mx-5 md:mx-9 min-h-[450px] overflow-hidden"
     >
       {/* LEFT */}
       <div
-        className={`flex-1 transition-all duration-1000 ease-out transform ${
+        className={`section1 flex-1 transition-all duration-1000 ease-out transform ${
           isVisible
             ? 'translate-x-0 opacity-100'
-            : '-translate-x-[50px] opacity-0'
+            : '-translate-x-[50px] md:-translate-x-[150px] opacity-0'
         }`}
       >
-        <div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-3">
+        <div className="section">
+          <h1 className="bigText text-3xl md:text-[inherit]">
             {mainText}
           </h1>
-          <p className="text-base md:text-lg">
+          <p className="smallText text-base md:text-[inherit]">
             {subText}
           </p>
         </div>
@@ -49,17 +49,17 @@ const About = ({ mainText, subText, text1, text2 }) => {
 
       {/* RIGHT */}
       <div
-        className={`flex-1 transition-all duration-1000 ease-out delay-150 transform ${
+        className={`section3 flex-1 transition-all duration-1000 ease-out delay-150 transform ${
           isVisible
             ? 'translate-x-0 opacity-100'
-            : 'translate-x-[50px] opacity-0'
+            : 'translate-x-[50px] md:translate-x-[150px] opacity-0'
         }`}
       >
-        <div className="space-y-4">
-          <p className="text-sm md:text-base leading-relaxed">
+        <div className="section">
+          <p className="aboutText text-sm md:text-[inherit]">
             {text1}
           </p>
-          <p className="text-sm md:text-base leading-relaxed">
+          <p className="aboutText text-sm md:text-[inherit]">
             {text2}
           </p>
         </div>

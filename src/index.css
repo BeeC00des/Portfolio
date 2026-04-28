@@ -90,7 +90,7 @@ body {
 }
 
 .section3{
-  width:48%;
+  width:100%;
   display: flex; 
   justify-content: left; 
   align-items: center;
