@@ -12,13 +12,13 @@ import Social from '../components/sections/social';
 function Home() {
     return (
         <div>  
-            <div className='main'>
+            {/* <div className='main'>
             <Button
-                text="Say Hello!"
+                text="Book Me"
             />
-            </div>
+            </div> */}
 
-            <Header title="BeeC00des" />
+            {/* <Header title="BeeC00des" /> */}
             <About
                 mainText="Hello!"
                 subText="I'm Bolarinwa Ajayi"
@@ -35,23 +35,30 @@ function Home() {
     for organizations. Check my Works" />
 
 
-            <Skill mainText="Skill" />
-            <Project mainText="Projects" />
-
-            <Story mainText="Experiences & volunteering" paraText="passionate and lives" />
-
-            <Social
-                mainText="Get In Touch"
-                subText="I'm Avaliable for collaboration" />
-
-            <Footer footerItem="Made with ❤️ from Beec00des" />
+            <div id="skill-section">
+              {/* <Skill mainText="Skill" /> */}
+            </div>
             
-            <div class="footerList">
+            <div id="project-section">
+              {/* <Project mainText="Projects" /> */}
+            </div>
+
+            <div id="gallery-section">
+              {/* <Story mainText="Experiences & volunteering" paraText="passionate and lives" /> */}
+            </div>
+
+            {/* <Social
+                mainText="Get In Touch"
+                subText="I'm Avaliable for collaboration" /> */}
+
+            {/* <Footer footerItem="Made with ❤️ from Beec00des" /> */}
+            
+            {/* <div class="footerList">
                 <Footer footerItem="Reactjs" />
                 <Footer footerItem="Github" />
                 <Footer footerItem="Git" />
                 <Footer footerItem="Netlify" />
-            </div>
+            </div> */}
         </div>
     )
 }

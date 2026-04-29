@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types'
-// import { useLocation } from 'react-router-dom'
-// import Button from './Button'
 import Navbar from './Nav';
 import Resume from '../../assets/images/ResumeSoft.pdf'
-import { Link } from 'react-router-dom';
-// import Project from '../sections/project';
+import { Link } from "react-router-dom";
 
+const Header = ({ title, onAdd }) => {
 
-
-const Header = ({ title, onAdd}) => {
-  // const location = useLocation()
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
   return (
     <header className='header'>
@@ -17,22 +18,15 @@ const Header = ({ title, onAdd}) => {
         <h1 className="text" >{title}</h1>
       </div>
       <div className='section2'>
-      <Link to={{ pathname: '/Project'}}><Navbar navItem="Project" to /></Link> 
-        <Navbar navItem="Skill" />
-        <a href={Resume} download="MyResume" target='_blank' without rel="noreferrer">
+        <Navbar navItem="Project" onClick={() => scrollToElement('project-section')} />
+        <Navbar navItem="Skill" onClick={() => scrollToElement('skill-section')} />
+        <a href={Resume} download="MyResume" target='_blank' rel="noreferrer">
           <Navbar navItem="Resume" />
         </a>
-        <Navbar navItem="Gallery" />
+        <Link to="/services">
+          <Navbar navItem="Services" />
+        </Link>
       </div>
-  
-      {/* {location.pathname === '/' && (
-        
-        <Button
-        color="green"
-        text="Say Hello"
-        onClick={onAdd}
-      />
-      )} */}
     </header>
   )
 }

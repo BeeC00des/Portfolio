@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 const Card = ({ text, img, link }) => {
   return (
     <div className="card">
-      <div className="cardContent">
+      <div className="w-fit cardContent">
         <img src={img} alt="toolLogo"/>
         <p className='aboutText'>
           {text}

@@ -4,33 +4,25 @@ import Button from "../Buttons/Button"
 
 
 
-const Card = ({ text, year, title, onClick }) => {
+const Card = ({ text, year, title, link }) => {
 
-  const urls = [
-      "https://zacraclearning.com",
-      "https://www.trialoguemedia.com",
-      "https://roberttaylormedia.com",
-      "https://tender-pare-05e51b.netlify.app/"
-    
-  ];
-
-const openInNewTab = (url) => {
-  window.open(url, "noreferrer");
-};
-
-
+  const openInNewTab = (url) => {
+    if (url) {
+      window.open(url, "noreferrer");
+    }
+  };
 
   return (
     <div className="card2">
       <div className="cardContent">
         <div>
-          <span class="supText">{year}</span>
+          <span className="supText">{year}</span>
           <p className='cardTitle'>{title}</p>
           <p className='cardText'>{text}</p>
-          <div>
-            {urls.map((url, index) => (  
-             <Button key={index}  text='Demo'  onClick={() => openInNewTab(url)}/>
-             ))}
+          <div className="mt-2">
+            {link && (
+              <Button text='View Project' onClick={() => openInNewTab(link)} />
+            )}
           </div>
         </div>
       </div>
