@@ -9,14 +9,48 @@ const Project = ({ mainText, onClick }) => {
     <>
       <div className='mainSection2'>
         <Tabs defaultValue="app_dev" className="flex flex-col w-full">
+
+
+          <div className="flex flex-col sm:flex-row  justify-between items-center  w-full px-[30px]">
           
+              <h1 className="text">{mainText}</h1>
+           
+              <TabsList className="flex flex-wrap gap-2 mb-4 bg-transparent border-none h-auto p-0 mt-5">
+                <TabsTrigger
+                  value="app_dev"
+                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors flex-shrink-0"
+                >
+                  <h2 className="font-light text-base sm:text-lg text-center m-0">
+                    Application Development
+                  </h2>
+                </TabsTrigger>
+                <TabsTrigger
+                  value="writing"
+                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors flex-shrink-0"
+                >
+                  <h2 className="font-light text-base sm:text-lg text-center m-0">
+                    Technical writing
+                  </h2>
+                </TabsTrigger>
+                <TabsTrigger
+                  value="speaking"
+                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors flex-shrink-0"
+                >
+                  <h2 className="font-light text-base sm:text-lg text-center m-0">
+                    Speaking engagement
+                  </h2>
+                </TabsTrigger>
+              </TabsList>
+            {/* </div> */}
+          </div>
 
 
-          <div className="my-0 mx-[20px] md:mx-[35px]">
+
+          {/* <div className="sectionHeader">
             <div class="">
               <h1 className="text">{mainText}</h1>
             </div>
-            <div className="projectNav textColor mt-4 md:mt-0 w-full overflow-x-auto overflow-y-hidden pb-2 md:pb-0">
+            <div class="flex flex-wrap w-full textColor">
               <TabsList className="gap-2 mb-4 bg-transparent border-none">
                 <TabsTrigger
                   value="app_dev"
@@ -44,10 +78,10 @@ const Project = ({ mainText, onClick }) => {
                 </TabsTrigger>
               </TabsList>
             </div>
-          </div>
+          </div> */}
 
           <TabsContent value="app_dev">
-            <div className="sectiond mt-8 w-full px-[25px] py-0 mx-auto">
+            <div className="sectiond mt-8 w-full px-[35px] py-0 mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card title="Cardio" year="2021" text="Interface heart disease awareness and prediction using ml models." link="https://tender-pare-05e51b.netlify.app/" />
                 <Card title="Event Ticket" year="2022" text="A platform for booking music event ticket and watch live concert" link="https://www.trialoguemedia.com" />
