@@ -81,7 +81,7 @@ const Project = ({ mainText, onClick }) => {
           </div> */}
 
           <TabsContent value="app_dev">
-            <div className="sectiond mt-8 w-full px-[35px] py-0 mx-auto">
+            <div className="sectiond mt-8 w-full px-[25px] py-0 mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card title="Cardio" year="2021" text="Interface heart disease awareness and prediction using ml models." link="https://tender-pare-05e51b.netlify.app/" />
                 <Card title="Event Ticket" year="2022" text="A platform for booking music event ticket and watch live concert" link="https://www.trialoguemedia.com" />
@@ -97,7 +97,7 @@ const Project = ({ mainText, onClick }) => {
           </TabsContent>
 
           <TabsContent value="writing">
-            <div className="sectiond mt-8 w-full px-[35px] py-0 mx-auto">
+            <div className="sectiond mt-8 w-full px-[25px] py-0 mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <ArticleCard
