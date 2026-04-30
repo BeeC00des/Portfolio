@@ -49,11 +49,14 @@ function Home() {
             </div>
 
 
-             {/* 
+            
 
             <Social
                 mainText="Get In Touch"
                 subText="I'm Avaliable for collaboration" />
+
+
+             {/* 
 
             <Footer footerItem="Made with ❤️ from Beec00des" />
             
