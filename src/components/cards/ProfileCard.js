@@ -4,8 +4,8 @@ import profileFront from '../../assets/images/bola-img.jpeg'
 
 const Card = () => {
   return (
-    <div className="profileCard group [perspective:1000px] cursor-pointer">
-      <div className="relative w-full h-full min-h-[500px] min-w-[400px] sm:w-[400px] sm:h-[500px] transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+    <div className="flex justify-center md:justify-end px-0 md:px-[25px] group [perspective:1000px] cursor-pointer w-full">
+      <div className="relative w-full max-w-[320px] sm:max-w-[400px] aspect-[4/5] sm:h-[500px] transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         
         {/* Front Image */}
         <div className="absolute inset-0 w-full h-full [backface-visibility:hidden]">

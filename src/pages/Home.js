@@ -42,11 +42,14 @@ function Home() {
             <div id="project-section">
               <Project mainText="Projects" />
             </div>
-            {/* 
+           
 
             <div id="gallery-section">
               <Story mainText="Experiences & volunteering" paraText="passionate and lives" />
             </div>
+
+
+             {/* 
 
             <Social
                 mainText="Get In Touch"
