@@ -5,7 +5,7 @@ const Card = ({ text, img, link }) => {
     <div className="card">
       <div className="w-fit cardContent">
         <img src={img} alt="toolLogo"/>
-        <p className='aboutText'>
+        <p className='aboutText text-2 lg:text-[15px]'>
           {text}
         </p>
       </div> 
