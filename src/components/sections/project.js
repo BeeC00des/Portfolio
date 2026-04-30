@@ -13,11 +13,11 @@ const Project = ({ mainText, onClick }) => {
             <div class="">
               <h1 className="text">{mainText}</h1>
             </div>
-            <div class="projectNav textColor">
-              <TabsList className="gap-2 mb-4 bg-transparent border-none">
+            <div className="projectNav textColor mt-4 md:mt-0 w-full overflow-x-auto overflow-y-hidden pb-2 md:pb-0">
+              <TabsList className="flex flex-row md:flex-wrap gap-2 mb-4 bg-transparent border-none min-w-max md:min-w-0">
                 <TabsTrigger
                   value="app_dev"
-                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors"
+                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors whitespace-nowrap"
                 >
                   <h2 className="font-light text-lg text-center m-0">
                     Application Development
@@ -25,7 +25,7 @@ const Project = ({ mainText, onClick }) => {
                 </TabsTrigger>
                 <TabsTrigger
                   value="writing"
-                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors"
+                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors whitespace-nowrap"
                 >
                   <h2 className="font-light text-lg text-center m-0">
                     Technical writing
@@ -33,7 +33,7 @@ const Project = ({ mainText, onClick }) => {
                 </TabsTrigger>
                 <TabsTrigger
                   value="speaking"
-                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors"
+                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors whitespace-nowrap"
                 >
                   <h2 className="font-light text-lg text-center m-0">
                     Speaking engagement
@@ -44,23 +44,17 @@ const Project = ({ mainText, onClick }) => {
           </div>
 
           <TabsContent value="app_dev">
-            <div class="sectiond">
-              <div className="cardSection">
-                <div class="layer">
-                  <Card title="Cardio" year="2021" text="Interface heart disease awareness and prediction using ml models." link="https://tender-pare-05e51b.netlify.app/"/>
-                  <Card title="Event Ticket" year="2022" text="A platform for booking music event ticket and watch live concert" link="https://www.trialoguemedia.com"/>
-                  <Card title="Zacrac Learning" year="2021" text="Contributed to development of an elearing platform" link="https://zacraclearning.com"/>
-                </div>
-                <div class="layer">
-                  <Card title="Bitcoin Rate" year="2022" text="Interface that create,edit and delete customer record for a supermart" link="#"/>
-                  <Card title="Tic-tac-toe" year="2021" text="A interface for create set of X’s or 0’s vertically or horizontally" link="#"/>
-                  <Card title="Snake Game" year="2021" text="An interface for the old moving snake in a box swallowing balls" link="#"/>
-                </div>
-                <div class="layer">
-                  <Card title="Amine Ball movement" year="2022" text="An Interface that control ball movement on box" link="#"/>
-                  <Card title="Todo Track app" year="2023" text="This application keep todo logs per time" link="#"/>
-                  <Card title="Appointment Booking app" year="2023" text="Easy to use application for appointment schedule" link="https://roberttaylormedia.com"/>
-                </div>
+            <div className="sectiond mt-8 w-full px-[35px] py-0 mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card title="Cardio" year="2021" text="Interface heart disease awareness and prediction using ml models." link="https://tender-pare-05e51b.netlify.app/"/>
+                <Card title="Event Ticket" year="2022" text="A platform for booking music event ticket and watch live concert" link="https://www.trialoguemedia.com"/>
+                <Card title="Zacrac Learning" year="2021" text="Contributed to development of an elearing platform" link="https://zacraclearning.com"/>
+                <Card title="Bitcoin Rate" year="2022" text="Interface that create,edit and delete customer record for a supermart" link="#"/>
+                <Card title="Tic-tac-toe" year="2021" text="A interface for create set of X’s or 0’s vertically or horizontally" link="#"/>
+                <Card title="Snake Game" year="2021" text="An interface for the old moving snake in a box swallowing balls" link="#"/>
+                <Card title="Amine Ball movement" year="2022" text="An Interface that control ball movement on box" link="#"/>
+                <Card title="Todo Track app" year="2023" text="This application keep todo logs per time" link="#"/>
+                <Card title="Appointment Booking app" year="2023" text="Easy to use application for appointment schedule" link="https://roberttaylormedia.com"/>
               </div>
             </div>
           </TabsContent>
