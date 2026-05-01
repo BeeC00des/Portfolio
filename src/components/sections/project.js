@@ -3,6 +3,11 @@ import Card from '../cards/BigCard'
 import ArticleCard from '../cards/ArticleCard'
 import SpeakerCard from '../cards/SpeakerCard'
 import { Tabs, TabsContent, TabsTrigger, TabsList } from 'components/ui/tabs'
+import BolaOne from "../../assets/images/Bola-One.jpeg"
+import BolaTwo from "../../assets/images/Bola-two.jpeg"
+import BolaThree from "../../assets/images/Bola-three.jpeg" 
+import BolaFour from "../../assets/images/Bola-four.jpeg" 
+
 
 const Project = ({ mainText, onClick }) => {
   return (
@@ -157,7 +162,7 @@ const Project = ({ mainText, onClick }) => {
                   <SpeakerCard
                     name="AVA QUANTUM"
                     role="CEO, Neuralink Technologies"
-                    img="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+                    img={BolaOne}
                     marginTop="mt-0"
                   />
                   <div className="mt-32 hidden md:block">
@@ -172,7 +177,7 @@ const Project = ({ mainText, onClick }) => {
                   <SpeakerCard
                     name="MAXWELL STRIDER"
                     role="CTO, CyberFuture"
-                    img="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+                    img={BolaTwo}
                     marginTop="md:mt-16 mt-8"
                   />
                 </div>
@@ -182,7 +187,7 @@ const Project = ({ mainText, onClick }) => {
                   <SpeakerCard
                     name="ELEANOR BLAZE"
                     role="COO, Quantum Leap"
-                    img="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
+                    img={BolaThree}
                     marginTop="md:mt-32 mt-8"
                   />
                 </div>
@@ -192,14 +197,14 @@ const Project = ({ mainText, onClick }) => {
                   <SpeakerCard
                     name="FELIX ORION"
                     role="CEO, Stellar AI Systems"
-                    img="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80"
+                    img={BolaFour}
                     marginTop="md:mt-48 mt-8"
                   />
 
                   {/* Mobile-only text */}
                   <div className="mt-16 block md:hidden">
                     <h3 className="text-[rgba(255,255,255,0.89)] font-bold text-2xl leading-tight text-center">
-                      This year, our lineup of speakers is impressive.
+                      This year, lineup of speaking engagements is impressive.
                     </h3>
                   </div>
                 </div>
