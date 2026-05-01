@@ -6,16 +6,19 @@ import About from '../components/sections/About';
 import Skill from '../components/sections/skillset';
 import Project from '../components/sections/project';
 import Story from '../components/sections/story';
-import Social from '../components/sections/social';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 function Home() {
     return (
-        <div>  
+        <div>
             <div className='main'>
-            <Button
-                text="Book Me"
-            />
+                <Link to="https://calendly.com/bolarinwaajayi/new-meeting">
+                    <Button
+                        text="Book Me"
+                    />
+                </Link>
+
             </div>
 
             <Header title="BeeC00des" />
@@ -36,30 +39,30 @@ function Home() {
 
 
             <div id="skill-section">
-              <Skill mainText="Skill" />
+                <Skill mainText="Skill" />
             </div>
-            
+
             <div id="project-section">
-              <Project mainText="Projects" />
+                <Project mainText="Projects" />
             </div>
-           
+
 
             <div id="gallery-section">
-              <Story mainText="Experiences & volunteering" paraText="passionate and lives" />
+                <Story mainText="Experiences & volunteering" paraText="passionate and lives" />
             </div>
 
 
-            
 
-            <Social
+
+            {/* <Social
                 mainText="Get In Touch"
-                subText="I'm Avaliable for collaboration" />
+                subText="I'm Avaliable for collaboration" /> */}
 
 
-         
+
 
             <Footer footerItem="Made with ❤️ from Beec00des" />
-            
+
             {/* <div class="footerList">
                 <Footer footerItem="Reactjs" />
                 <Footer footerItem="Github" />

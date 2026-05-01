@@ -160,14 +160,14 @@ const Project = ({ mainText, onClick }) => {
                 {/* Column 1 */}
                 <div className="flex flex-col h-full w-full md:w-1/4">
                   <SpeakerCard
-                    name="AVA QUANTUM"
-                    role="CEO, Neuralink Technologies"
+                    name="4herfrika NG0"
+                    role="2024 Guest Speaker"
                     img={BolaOne}
                     marginTop="mt-0"
                   />
                   <div className="mt-32 hidden md:block">
                     <h3 className="text-[rgba(255,255,255,0.89)] font-bold text-[28px] leading-tight drop-shadow-lg">
-                      This year, our lineup of speakers is impressive.
+                     A growing professional speaker
                     </h3>
                   </div>
                 </div>
@@ -175,8 +175,9 @@ const Project = ({ mainText, onClick }) => {
                 {/* Column 2 */}
                 <div className="w-full md:w-1/4">
                   <SpeakerCard
-                    name="MAXWELL STRIDER"
-                    role="CTO, CyberFuture"
+                  name="GDG Akure"
+                    role="2023 - Technical speaker"
+                    
                     img={BolaTwo}
                     marginTop="md:mt-16 mt-8"
                   />
@@ -185,8 +186,8 @@ const Project = ({ mainText, onClick }) => {
                 {/* Column 3 */}
                 <div className="w-full md:w-1/4">
                   <SpeakerCard
-                    name="ELEANOR BLAZE"
-                    role="COO, Quantum Leap"
+                    name="learn2earn"
+                    role="2025, Co-panelist & Guest speaker"
                     img={BolaThree}
                     marginTop="md:mt-32 mt-8"
                   />
@@ -195,8 +196,8 @@ const Project = ({ mainText, onClick }) => {
                 {/* Column 4 */}
                 <div className="w-full md:w-1/4">
                   <SpeakerCard
-                    name="FELIX ORION"
-                    role="CEO, Stellar AI Systems"
+                    name="Paideia Africa"
+                    role="2022 Guest speaker & Girl -childmentor"
                     img={BolaFour}
                     marginTop="md:mt-48 mt-8"
                   />

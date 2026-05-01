@@ -20,21 +20,23 @@ const Scribble = () => (
 );
 
 const IdeaRow = ({ crossed, clear }) => (
-  <h2 className="text-[7.5vw] md:text-[2rem] lg:text-[4rem] leading-[1.1] font-bold tracking-tight text-white whitespace-nowrap">
-    Bola Likes <span className="relative inline-block text-white mx-1 md:mx-2">{crossed}<Scribble /></span> {clear}
+  <h2 className="text-[7.5vw] md:text-[3rem] leading-[1.1] font-bold tracking-tight text-white whitespace-nowrap">
+    Bolarinwa <span className="relative inline-block text-white mx-1 md:mx-2">{crossed}<Scribble /></span> {clear}
   </h2>
 );
 
 const IdeaSection = () => {
   return (
-    <div className="flex flex-col gap-1 md:gap-3 px-8 md:px-[35px] py-10 scale-95 md:scale-100 origin-left md:origin-center">
-      {/* <IdeaRow crossed="spaghetti code" clear="clean code" /> */}
-      <IdeaRow crossed="bugs" clear="solutions" />
-      <IdeaRow crossed="latency" clear="performance" />
-      <IdeaRow crossed="downtime" clear="reliability" />
-      <IdeaRow crossed="complexity" clear="simplicity" />
-      <IdeaRow crossed="templates" clear="innovation" />
-      <IdeaRow crossed="typing" clear="engineering" />
+    <div className="flex flex-col items-left gap-1 md:gap-3 px-8 md:px-[35px] py-10 scale-95 md:scale-100 origin-left md:origin-center">
+ 
+      
+      <IdeaRow crossed="breaks" clear="support people" />
+      <IdeaRow crossed="hate" clear="loves simplicity" />
+      <IdeaRow crossed="destory" clear="builts products" />
+      <IdeaRow crossed="thinks" clear="births  innovation" />
+      <IdeaRow crossed="is not" clear="is a developer advocate" />
+     
+ 
     </div>
   );
 };
