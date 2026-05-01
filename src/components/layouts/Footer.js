@@ -58,7 +58,7 @@ const Footer = () => {
                         onClick={scrollToTop}
                         className="mt-6 flex items-center gap-2 border border-[#199C16] px-5 py-2 w-fit text-xs font-semibold tracking-wider hover:bg-[#199C16] hover:text-white transition-all"
                     >
-                        <Icon icon="mdi:chevron-double-up" width="18" /> BACK TO TOP
+                        <Icon  icon="mdi:chevron-double-up" width="18" /> BACK TO TOP
                     </button>
                 </div>
 
