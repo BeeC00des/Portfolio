@@ -16,27 +16,25 @@ const Header = ({ title, onAdd }) => {
   }
 
   return (
-    <header className="text-[10px] flex flex-col justify-center items-center mx-[15px] my-[12px]">
+    <header className="text-[10px] flex flex-wrap justify-between items-center px-[15px] md:px-[35px] my-[12px]">
       
-      {/* Top row: title + hamburger */}
-      <div className="flex items-center justify-between w-full">
-        <h1 className="text">{title}</h1>
+      {/* Title */}
+      <h1 className="text">{title}</h1>
 
-        {/* Hamburger — mobile only */}
-        <button
-          className="flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1 md:hidden"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-          aria-expanded={menuOpen}
-        >
-          <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${menuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
-          <span className={`block w-6 h-[2px] bg-current rounded transition-opacity duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${menuOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
-        </button>
-      </div>
+      {/* Hamburger — mobile only */}
+      <button
+        className="flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1 md:hidden"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle navigation"
+        aria-expanded={menuOpen}
+      >
+        <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${menuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
+        <span className={`block w-6 h-[2px] bg-current rounded transition-opacity duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+        <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${menuOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
+      </button>
 
       {/* Nav links */}
-      <div className={`flex-col w-full gap-1 pt-2 md:flex md:flex-row md:w-auto md:gap-4 md:pt-0 ${menuOpen ? 'flex' : 'hidden'}`}>
+      <div className={`flex-col w-full gap-1 pt-2 md:flex md:flex-row md:w-auto md:gap-4 md:pt-0 md:items-center ${menuOpen ? 'flex' : 'hidden'}`}>
         <Navbar navItem="Project" onClick={() => scrollToElement('project-section')} />
         <Navbar navItem="Skill" onClick={() => scrollToElement('skill-section')} />
         <a href={Resume} download="MyResume" target='_blank' rel="noreferrer">
