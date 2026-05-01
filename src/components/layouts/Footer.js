@@ -12,9 +12,9 @@ const Footer = () => {
     };
 
     return (
-        <footer className="relative overflow-hidden bg-[#14171c] text-white mt-12">
+        <footer className="relative overflow-hidden  text-white mt-12">
             
-            <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <div className="absolute inset-0 opacity-25 pointer-events-none">
                 <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 100 100">
                     <path d="M0,100 L60,0 L120,100" stroke="#199C16" strokeWidth="0.5" fill="none" />
                     <path d="M30,100 L70,30 L110,100" stroke="#199C16" strokeWidth="0.5" fill="none" />
