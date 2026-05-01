@@ -1,25 +1,21 @@
 import PropTypes from 'prop-types';
 import SocialBtn from '../Buttons/socialBtn';
-// import { getIcon} from '@iconify/react';
 
 import instagramIcon from '@iconify/icons-mdi/instagram';
 import twitterIcon from '@iconify/icons-mdi/twitter';
 import githubIcon from '@iconify/icons-mdi/github';
 import linkedinIcon from '@iconify/icons-mdi/linkedin';
 
-
 const instag = instagramIcon;
 const tweet = twitterIcon;
 const github = githubIcon;
 const linkedIn = linkedinIcon;
-// const test = getIcon('mdi:github');
 
-
-const Social = ({ mainText, subText, text1, text2, img, onClick }) => {
+const Social = ({ mainText, subText }) => {
   return (
     <>
-      <div className='flex justify-between items-center px-[45px] py-0 py-10'>
-        <div className="">
+      <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center px-5 sm:px-[45px] py-10 gap-6 sm:gap-0'>
+        <div>
           <div className="section">
             <h1 className="text">{mainText}</h1>
             <p className="smallText">{subText}</p>
@@ -32,27 +28,23 @@ const Social = ({ mainText, subText, text1, text2, img, onClick }) => {
             </div>
             <p className="smallText">Lagos, Nigeria • West Africa Time (WAT)</p>
           </div>
-
         </div>
 
-        <div class="sectionSocial">
+        <div className="flex flex-row  gap-3">
           <SocialBtn img={instag} />
           <SocialBtn img={linkedIn} />
           <SocialBtn img={tweet} />
           <SocialBtn img={github} />
-          {/* <SocialBtn img={test}/>   */}
         </div>
       </div>
-
     </>
-  )
-}
-
+  );
+};
 
 Social.propTypes = {
   text: PropTypes.string,
   mainText: PropTypes.string,
+  subText: PropTypes.string,
+};
 
-}
-
-export default Social
+export default Social;

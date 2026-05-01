@@ -26,7 +26,7 @@ const Skill = ({ mainText }) => {
         <div className="skillNav textColor">
           <Tabs defaultValue="techskills" className="flex flex-col w-full">
             {/* Tabs */}
-            <TabsList className="gap-2 flex flex-wrap md:flex-nowrap">
+            <TabsList className="gap-2 flex flex-wrap md:flex-nowrap mb-5">
               <TabsTrigger
                 value="techskills"
                 className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-3 py-2 md:px-4"

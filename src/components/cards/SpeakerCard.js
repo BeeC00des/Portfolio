@@ -8,7 +8,7 @@ const SpeakerCard = ({ name, role, img, marginTop }) => {
           <img 
             src={img} 
             alt={name} 
-            className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500" 
+            className="w-full h-full object-cover filter  transition-all duration-500" 
           />
         </div>
       </div>
