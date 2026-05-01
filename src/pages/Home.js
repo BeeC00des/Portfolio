@@ -60,12 +60,12 @@ function Home() {
 
             <Footer footerItem="Made with ❤️ from Beec00des" />
             
-            <div class="footerList">
+            {/* <div class="footerList">
                 <Footer footerItem="Reactjs" />
                 <Footer footerItem="Github" />
                 <Footer footerItem="Git" />
                 <Footer footerItem="Netlify" />
-            </div> 
+            </div>  */}
         </div>
     )
 }
