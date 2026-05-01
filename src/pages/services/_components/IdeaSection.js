@@ -28,7 +28,7 @@ const IdeaRow = ({ crossed, clear }) => (
 const IdeaSection = () => {
   return (
     <div className="flex flex-col gap-1 md:gap-3 px-8 md:px-[35px] py-10 scale-95 md:scale-100 origin-left md:origin-center">
-      <IdeaRow crossed="spaghetti code" clear="clean code" />
+      {/* <IdeaRow crossed="spaghetti code" clear="clean code" /> */}
       <IdeaRow crossed="bugs" clear="solutions" />
       <IdeaRow crossed="latency" clear="performance" />
       <IdeaRow crossed="downtime" clear="reliability" />

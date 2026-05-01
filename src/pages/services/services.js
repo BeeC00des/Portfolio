@@ -10,7 +10,7 @@ import Footer from 'components/layouts/Footer';
 const Services = () => {
   return (
     <div className="">
-      <NavbarTwo title="BeeC00des" />
+      <NavbarTwo title="BeeC00des" /> 
       <IdeaSection />
       <HeroSection />
       <FeatureSection />

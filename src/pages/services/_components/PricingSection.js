@@ -65,9 +65,9 @@ const PricingSection = () => {
                 : "border border-gray-800 hover:border-[#199C16]"
             }`}
           >
-            {plan.highlight && (
+            {/* {plan.highlight && (
               <div className="absolute top-0 left-0 right-0 h-1 bg-[#199C16]"></div>
-            )}
+            )} */}
 
             <h3 className="text-2xl text-white text-center mb-2 font-medium">
               {plan.title}
