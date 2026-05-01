@@ -46,44 +46,11 @@ const Project = ({ mainText, onClick }) => {
                   </h2>
                 </TabsTrigger>
               </TabsList>
-            {/* </div> */}
           </div>
 
 
 
-          {/* <div className="sectionHeader">
-            <div class="">
-              <h1 className="text">{mainText}</h1>
-            </div>
-            <div class="flex flex-wrap w-full textColor">
-              <TabsList className="gap-2 mb-4 bg-transparent border-none">
-                <TabsTrigger
-                  value="app_dev"
-                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors"
-                >
-                  <h2 className="font-light text-lg text-center m-0">
-                    Application Development
-                  </h2>
-                </TabsTrigger>
-                <TabsTrigger
-                  value="writing"
-                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors"
-                >
-                  <h2 className="font-light text-lg text-center m-0">
-                    Technical writing
-                  </h2>
-                </TabsTrigger>
-                <TabsTrigger
-                  value="speaking"
-                  className="data-[state=active]:bg-[#199C16] data-[state=active]:text-white rounded px-4 py-2 transition-colors"
-                >
-                  <h2 className="font-light text-lg text-center m-0">
-                    Speaking engagement
-                  </h2>
-                </TabsTrigger>
-              </TabsList>
-            </div>
-          </div> */}
+      
 
           <TabsContent value="app_dev">
             <div className="sectiond mt-8 w-full px-[25px] py-0 mx-auto">
@@ -105,40 +72,32 @@ const Project = ({ mainText, onClick }) => {
             <div className="sectiond mt-8 w-full px-[25px] py-0 mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <ArticleCard
+                <Card
                   title="Best Practice for Optimizing Web Performance"
-                  excerpt="Web developers are so passionate about creating websites or web applications to meet user demand,..."
-                  date="May 20, 2022"
-                  readTime="5 min read"
+                  text="Web developers are so passionate about creating websites or web applications to meet user demand,..."
+                  year="May 20, 2022"
                   link="https://beec00des.hashnode.dev/best-practice-for-optimizing-web-performance"
-                  img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80"
                 />
 
-                <ArticleCard
+                <Card
                   title="Functions in Javascript"
-                  excerpt="A function is an essential building block of a program, also a program is a set of instructions assigned to a..."
-                  date="Jul 22, 2022"
-                  readTime="6 min read"
+                  text="A function is an essential building block of a program, also a program is a set of instructions assigned to a..."
+                  year="Jul 22, 2022"
                   link="https://beec00des.hashnode.dev/functions-in-javascript"
-                  img="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=400&q=80"
                 />
 
-                <ArticleCard
+                <Card
                   title="How to build a Tic Tac Toe Game in ReactJS"
-                  excerpt="A comprehensive, step-by-step guide on structuring and building a classic Tic Tac Toe game utilizing robust..."
-                  date="Oct 10, 2022"
-                  readTime="7 min read"
+                  text="A comprehensive, step-by-step guide on structuring and building a classic Tic Tac Toe game utilizing robust..."
+                  year="Oct 10, 2022"
                   link="https://beec00des.hashnode.dev/how-to-build-a-tic-tac-toe-game-in-reactjs"
-                  img="https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=400&q=80"
                 />
 
-                <ArticleCard
+                <Card
                   title="Communication Towards Problem Solving"
-                  excerpt="How effective communication serves as the fundamental bridge towards optimal problem solving inside dynamic tech ecosystems."
-                  date="Aug 14, 2022"
-                  readTime="4 min read"
+                  text="How effective communication serves as the fundamental bridge towards optimal problem solving inside dynamic tech ecosystems."
+                  year="Aug 14, 2022"
                   link="https://beec00des.hashnode.dev/communication-towards-problem-solving"
-                  img="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?w=400&q=80"
                 />
 
               </div>
