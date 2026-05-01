@@ -1,4 +1,4 @@
-import Header from "components/layouts/Header";
+import NavbarTwo from "components/layouts/NavbarTwo";
 
 const Scribble = () => (
   <svg
@@ -20,26 +20,26 @@ const Scribble = () => (
 );
 
 const IdeaRow = ({ crossed, clear }) => (
-  <h2 className="text-[7.5vw] md:text-[4rem] lg:text-[5rem] leading-[1.1] font-serif tracking-tight text-white whitespace-nowrap">
-    Bola is <span className="relative inline-block text-white mx-1 md:mx-2">{crossed}<Scribble /></span> {clear}
+  <h2 className="text-[7.5vw] md:text-[2rem] lg:text-[4rem] leading-[1.1] font-bold tracking-tight text-white whitespace-nowrap">
+    Bola Likes <span className="relative inline-block text-white mx-1 md:mx-2">{crossed}<Scribble /></span> {clear}
   </h2>
 );
 
 const Services = () => {
   return (
     <div className="">
-      <Header title="BeeC00des" />
-      <div className="flex flex-col gap-1 md:gap-3 px-[55px] py-10 scale-95 md:scale-100 origin-left md:origin-center">
-        <IdeaRow crossed="clutter" clear="clarity" />
-        <IdeaRow crossed="hallucinations" clear="trust" />
-        <IdeaRow crossed="answers" clear="knowledge" />
-        <IdeaRow crossed="static" clear="fresh data" />
-        <IdeaRow crossed="hype" clear="depth" />
-        <IdeaRow crossed="just data" clear="solid facts" />
-        <IdeaRow crossed="drift" clear="a compass" />
+      <NavbarTwo title="BeeC00des" />
+      <div className="flex flex-col gap-1 md:gap-3  px-8 md:px-[35px] py-10 scale-95 md:scale-100 origin-left md:origin-center">
+        <IdeaRow crossed="spaghetti code" clear="clean code" />
+        <IdeaRow crossed="bugs" clear="solutions" />
+        <IdeaRow crossed="latency" clear="performance" />
+        <IdeaRow crossed="downtime" clear="reliability" />
+        <IdeaRow crossed="complexity" clear="simplicity" />
+        <IdeaRow crossed="templates" clear="innovation" />
+        <IdeaRow crossed="typing" clear="engineering" />
       </div>
       {/* New section translating the Figma design */}
-      <div className="flex flex-col items-center font-serif text-center mt-32 mb-16 px-6">
+      <div className="flex flex-col items-center font-bold text-center mt-32 mb-16 px-6">
         <h2 className="text-[10vw] md:text-[5rem] lg:text-[6rem] leading-[1.1] tracking-tight text-white mb-6">
           At Cala we <span className="text-[#199C16]">clean</span> data
         </h2>

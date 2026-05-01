@@ -58,7 +58,7 @@ const Card = () => {
     
 
         {/* Placeholder overlay — like the Hero's .placeholder div */}
-        <div className="absolute inset-0 rounded-lg bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
+        {/* <div className="absolute inset-0 rounded-lg bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-500" /> */}
 
       </div>
     </div>

@@ -17,9 +17,12 @@ const Header = ({ title, onAdd }) => {
 
   return (
     <header className="text-[10px] flex flex-wrap justify-between items-center px-[15px] md:px-[35px] my-[12px]">
-      
+
       {/* Title */}
-      <h1 className="text">{title}</h1>
+      <Link to="/" className="text-white cursor-pointer hover:text-[#199C16] transition-colors" style={{ textDecoration: 'none' }}>
+        <h1 className="text">{title}</h1>
+      </Link>
+
 
       {/* Hamburger — mobile only */}
       <button
