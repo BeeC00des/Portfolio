@@ -6,6 +6,7 @@ const faqData = [
   { question: "Rebacca - Technical Career Consultation", answer: "It was an insightful session. Thank You" },
   { question: "Folashade - Career Job Search Consulation  ", answer: "I received support through portfolio review and job search guidance, which helped me clearly present my skills and approach my applications with confidence. With this direction, I was able to land a job." },
   { question: "Peace ojo - Tech CareerConsultation", answer: "I received clear strategies for landing a job along with consistent support throughout my job search process. This guidance significantly improved my approach and ultimately helped me secure a remote tech role." },
+  { question: "Mr solomon - Product development -Germany", answer: "I worked on an edtech platform MVP focused on supporting students in Germany, translating the idea into a functional and well-structured prototype. The execution was clear, practical, and aligned with the product vision, and it contributed to the brand successfully securing a business grant." },
   // { question: "Folashade - ", answer: "" },
 
 ];
