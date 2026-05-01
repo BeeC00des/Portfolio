@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import Card from '../cards/BigCard'
-import ArticleCard from '../cards/ArticleCard'
+// import ArticleCard from '../cards/ArticleCard'
 import SpeakerCard from '../cards/SpeakerCard'
 import { Tabs, TabsContent, TabsTrigger, TabsList } from 'components/ui/tabs'
 import BolaOne from "../../assets/images/Bola-One.jpeg"
