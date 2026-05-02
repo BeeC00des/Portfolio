@@ -46,6 +46,7 @@
 
 
 
+
 import React from 'react';
 
 const Scribble = () => (
@@ -68,14 +69,14 @@ const Scribble = () => (
 );
 
 const IdeaRow = ({ crossed, clear }) => (
-  <h2 className="text-[7.5vw] md:text-[3rem] leading-[1.1] font-bold tracking-tight text-white whitespace-nowrap">
+  <h2 className="text-[4.5vw] md:text-[3rem] leading-[1.1] font-bold tracking-tight text-white">
     Bolarinwa <span className="relative inline-block text-white mx-1 md:mx-2">{crossed}<Scribble /></span> {clear}
   </h2>
 );
 
 const IdeaSection = () => {
   return (
-    <div className="flex flex-col items-start justify-center gap-1 md:gap-3 px-8 md:px-[35px] py-10 scale-95 md:scale-100 origin-center w-fit mx-auto">
+    <div className="flex flex-col items-start justify-center gap-1 md:gap-3 px-4 md:px-[35px] py-10 w-full md:w-fit md:scale-100 md:origin-center mx-auto">
       <IdeaRow crossed="breaks" clear="support people" />
       <IdeaRow crossed="hate" clear="loves simplicity" />
       <IdeaRow crossed="destory" clear="builts products" />

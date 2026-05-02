@@ -17,39 +17,44 @@ const Store = () => {
 
                     <Link to="/">
                         <button
-                            className="mt-6 flex items-center gap-2 border border-[#199C16] px-5 py-2 w-fit text-xs font-semibold tracking-wider hover:bg-[#199C16] hover:text-white transition-all"
+                            className="flex items-center gap-2 border border-[#199C16] px-5 py-2 w-fit text-xs font-semibold tracking-wider hover:bg-[#199C16] hover:text-white transition-all"
                         >
                             <Icon icon="mdi:chevron-double-left" width="18" /> BACK TO HOME
                         </button>
                     </Link>
                 </div>
 
-                <Tabs defaultValue="stationary" className=" flex gap-10">
-                    <TabsList className="flex flex-col w-[200px] h-fit bg-[#14171c] border border-[#31363B] mb-10 p-2 gap-1">
+                <Tabs defaultValue="stationary" className="flex flex-col md:flex-row gap-6 md:gap-10">
+                    <TabsList className="flex md:flex-col w-full md:w-[200px] bg-[#14171c] border border-[#31363B] mb-6 md:mb-10 p-2 gap-2 md:gap-1 overflow-x-auto md:overflow-visible no-scrollbar">
+
                         <TabsTrigger
                             value="stationary"
-                            className="w-full justify-start px-4 py-1.5 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+                            className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-2 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
                         >
                             Stationary
                         </TabsTrigger>
+
                         <TabsTrigger
                             value="swags"
-                            className="w-full justify-start px-4 py-1.5 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+                            className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-2 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
                         >
                             Swags
                         </TabsTrigger>
+
                         <TabsTrigger
                             value="template"
-                            className="w-full justify-start px-4 py-1.5 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+                            className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-2 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
                         >
                             Template
                         </TabsTrigger>
+
                         <TabsTrigger
                             value="books"
-                            className="w-full justify-start px-4 py-1.5 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+                            className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-2 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
                         >
                             Books
                         </TabsTrigger>
+
                     </TabsList>
 
 
