@@ -6,18 +6,19 @@ import FeatureSection from "./_components/FeatureSection";
 import PricingSection from "./_components/PricingSection";
 import FaqSection from "./_components/FaqSection";
 import Footer from 'components/layouts/Footer';
+import Container from 'components/layouts/Container';
 
 const Services = () => {
   return (
-    <div className="">
-      <NavbarTwo title="BeeC00des" /> 
+    <Container>
+      <NavbarTwo title="BeeC00des" />
       <IdeaSection />
       <HeroSection />
       <FeatureSection />
       <PricingSection />
       <FaqSection />
-       <Footer footerItem="Made with ❤️ from Beec00des" />
-    </div>
+      <Footer footerItem="Made with ❤️ from Beec00des" />
+    </Container>
   );
 };
 

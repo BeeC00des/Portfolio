@@ -26,7 +26,7 @@ const FeatureSection = () => {
             <span className="w-2.5 h-2.5 rounded-full bg-[#199C16] animate-pulse"></span>
             Product Development
           </div>
-          <div className="text-6xl md:text-7xl text-[#199C1] font-light tracking-tight mb-6">
+          <div className="text-6xl md:text-7xl text-[#199C16] font-light tracking-tight mb-6">
             +10
           </div>
           <p className="text-gray-400 text-base md:text-lg leading-relaxed font-light">
