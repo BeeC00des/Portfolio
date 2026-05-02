@@ -13,7 +13,7 @@ import Container from 'components/layouts/Container';
 function Home() {
     return (
         <div>
-            <div className='flex justify-end gap-4 mt-4'>
+            <div className='flex justify-end gap-4'>
                 <Link to="https://calendly.com/bolarinwaajayi/new-meeting">
                     <Button
                         text="Book A Call"

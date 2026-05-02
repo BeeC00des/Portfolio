@@ -1,13 +1,16 @@
 import React from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from 'components/ui/tabs';
 import StatCard from './_components/StatCard';
-import ProductCard from './_components/ProductCard';
+import { Link } from 'react-router-dom';
+
 
 const Store = () => {
     return (
         <div className="text-white p-6 md:p-12 font-mono" style={{ backgroundColor: '#010001' }}>
             <div className="max-w-6xl mx-auto">
-                <h1 className="text-3xl font-bold mb-8 text-[#199C16]">Store</h1>
+                <Link to="/">
+                    <h1 className="text-3xl font-bold mb-8 text-[#199C16]">Store</h1>
+                </Link>
 
                 <Tabs defaultValue="stationary" className=" flex gap-10">
                     <TabsList className="flex flex-col w-[200px] h-fit bg-[#14171c] border border-[#31363B] mb-10 p-2 gap-1">
