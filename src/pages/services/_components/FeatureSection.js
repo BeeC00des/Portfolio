@@ -3,7 +3,7 @@ import React from 'react';
 const FeatureSection = () => {
   return (
     <div className="flex flex-col items-center mt-10 mb-24 px-6 w-full">
-      <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+      {/* <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
         <svg className="w-16 h-16 text-white mb-4 md:mb-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="9" width="16" height="11" rx="2" />
           <path d="M12 9V4" />
@@ -17,7 +17,7 @@ const FeatureSection = () => {
         <h2 className="text-4xl md:text-5xl lg:text-6xl  font-serif text-white tracking-tight">
           Preferred Services
         </h2>
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto w-full py-10">
         {/* Card 1 */}
