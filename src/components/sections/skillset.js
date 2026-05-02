@@ -13,7 +13,7 @@ let Logo8 = require("../../assets/icons/vue.png");
 
 const Skill = ({ mainText }) => {
   return (
-    <div className="flex flex-col md:flex-row my-0 mx-[20px] md:mx-[35px] gap-6 md:gap-0">
+    <div className="flex flex-col md:flex-row my-0 mx-[20px] md:mx-[35px] gap-6 md:gap-0 mb-[100px]">
       {/* LEFT */}
       <div className="section1">
         <div className="section">

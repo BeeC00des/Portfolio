@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useRef, useState } from 'react';
 
-const About = ({ mainText, subText, text1, text2 }) => {
+const About = ({ mainText, subText, text1, text2, text3 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -26,7 +26,7 @@ const About = ({ mainText, subText, text1, text2 }) => {
 
   return (
     <div
-      className="h-[450px] mx-auto overflow-hidden flex flex-col md:flex-row gap-4 md:gap-0 lg:px-10 px-3"
+      className="h-[500px] mx-auto overflow-hidden flex flex-col md:flex-row gap-4 md:gap-0 lg:px-10 px-3 py-[350px]"
       ref={sectionRef}
     >
       {/* LEFT */}
@@ -61,6 +61,10 @@ const About = ({ mainText, subText, text1, text2 }) => {
           </p>
           <p className="aboutText text-sm md:text-[inherit]">
             {text2}
+          </p>
+
+          <p className="aboutText text-sm md:text-[inherit]">
+            {text3}
           </p>
         </div>
       </div>

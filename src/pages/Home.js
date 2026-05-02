@@ -24,49 +24,55 @@ function Home() {
 
             <Container>
 
-            <Header title="BeeC00des" />
-            <About
-                mainText="Hello!"
-                subText="I'm Bolarinwa Ajayi"
+                <Header title="BeeC00des" />
+                <About
+                    mainText="Hello!"
+                    subText="I'm Bolarinwa Ajayi"
 
 
-                text1="A creative 
+                    text3="I help founders, teams, and brands design, build, and maintain web applications that don’t just function—they attract users, communicate value clearly, and keep customers coming back. By combining strong frontend engineering with a deep focus on user experience, I turn complex ideas into fast, scalable, and intuitive digital products that work seamlessly for both technical and non-technical audiences"
+
+
+                    text1="A creative 
     Software Developer skilled at frontend engineering  for webs service 
     crafting responsive and beautiful user interface 
     embedded with great functionalities and interact with web servers."
 
-                text2="
+                    text2="
     I'm passionate about innovating software solutions and impacting my community. 
     I have three years experience working and volunteering 
     for organizations. Check my Works" />
 
 
-            <div id="skill-section">
-                <Skill mainText="Skill" />
-            </div>
-
-            <div id="project-section">
-                <Project mainText="Projects" />
-            </div>
-
-
-            <div id="gallery-section">
-                <Story mainText="Passion" paraText="Service to humanity" />
-            </div>
 
 
 
+                <div id="skill-section">
+                    <Skill mainText="Skill" />
+                </div>
 
-            {/* <Social
+                <div id="project-section">
+                    <Project mainText="Projects" />
+                </div>
+
+
+                <div id="gallery-section">
+                    <Story mainText="Passion" paraText="Service to humanity" />
+                </div>
+
+
+
+
+                {/* <Social
                 mainText="Get In Touch"
                 subText="I'm Avaliable for collaboration" /> */}
 
 
 
 
-            <Footer footerItem="Made with ❤️ from Beec00des" />
+                <Footer footerItem="Made with ❤️ from Beec00des" />
 
-            {/* <div class="footerList">
+                {/* <div class="footerList">
                 <Footer footerItem="Reactjs" />
                 <Footer footerItem="Github" />
                 <Footer footerItem="Git" />

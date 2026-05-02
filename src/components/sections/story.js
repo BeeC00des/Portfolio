@@ -6,7 +6,7 @@ import ProfileCard from '../cards/ProfileCard';
 const Story= ({ mainText, storyText, paraText }) => {
   return (
     <>
-    <div className='flex flex-col md:flex-row mt-[30px] md:mt-[70px] px-[25px] md:px-[35px] gap-8 md:gap-0'>
+    <div className='flex flex-col md:flex-row py-[100px] px-[25px] md:px-[35px] gap-8 md:gap-0'>
         <div className="w-full md:w-1/2 flex justify-start items-center">
             <div className="section">
                 <h1 className="text">{mainText}</h1>
