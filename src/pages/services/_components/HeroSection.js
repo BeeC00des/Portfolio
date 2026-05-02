@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center font-bold text-center mt-32  px-6">
+    <div className="flex flex-col items-center font-bold text-center mt-5 px-6">
       <div className="flex items-center justify-center gap-3">
         <svg className="w-16 h-16 text-white mb-4 md:mb-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="9" width="16" height="11" rx="2" />
