@@ -14,7 +14,7 @@ const FeatureSection = () => {
           <path d="M20 13h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1" />
           <path d="M4 13H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1" />
         </svg>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white tracking-tight">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl  font-serif text-white tracking-tight">
           Preferred Services
         </h2>
       </div>
