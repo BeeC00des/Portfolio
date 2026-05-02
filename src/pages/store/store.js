@@ -3,6 +3,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from 'components/ui/tabs';
 import StatCard from './_components/StatCard';
 import { Link } from 'react-router-dom';
 import Footer from 'components/layouts/Footer';
+import { Icon } from '@iconify/react';
 
 
 const Store = () => {
@@ -10,13 +11,17 @@ const Store = () => {
         <div className="text-white p-6 md:p-12 font-mono" style={{ backgroundColor: '#010001' }}>
             <div className="max-w-6xl mx-auto">
                 <div className='flex justify-between'>
-                <Link to="/">
-                    <h1 className="text-3xl font-bold mb-8 text-[#199C16]">Store</h1>
-                </Link>
+                    <Link to="/">
+                        <h1 className="text-3xl font-bold mb-8 text-[#199C16]">Store</h1>
+                    </Link>
 
-                 <Link to="/">
-                    <h1 className="text-2xl font-bold mb-8 bg-[#199C16] px-6 py-2 rounded-lg cursor-pointer hover:bg-[#199C16] hover:text-white hover:border-none transition-colors duration-300 border border-transparent">Back</h1>
-                </Link>
+                    <Link to="/">
+                        <button
+                            className="mt-6 flex items-center gap-2 border border-[#199C16] px-5 py-2 w-fit text-xs font-semibold tracking-wider hover:bg-[#199C16] hover:text-white transition-all"
+                        >
+                            <Icon icon="mdi:chevron-double-left" width="18" /> BACK TO HOME
+                        </button>
+                    </Link>
                 </div>
 
                 <Tabs defaultValue="stationary" className=" flex gap-10">
