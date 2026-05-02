@@ -13,10 +13,17 @@ import Container from 'components/layouts/Container';
 function Home() {
     return (
         <div>
-            <div className='main'>
+            <div className='flex justify-end gap-4 mt-4'>
                 <Link to="https://calendly.com/bolarinwaajayi/new-meeting">
                     <Button
-                        text="Book Me"
+                        text="Book A Call"
+                    />
+                </Link>
+
+                <Link to="store">
+                    <Button
+                        className="bg-black border border-[#199C16] !text-[#199C16]  hover:!bg-[#199C16] hover:!text-white !transition-colors !duration-300"
+                        text="Store"
                     />
                 </Link>
 
