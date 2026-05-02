@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types'
 import Navbar from './Nav';
+import { Icon } from '@iconify/react';
 import Resume from '../../assets/images/ResumeSoft.pdf'
 import { Link } from "react-router-dom";
 
@@ -20,7 +21,13 @@ const Header = ({ title, onAdd }) => {
 
       {/* Title */}
       <Link to="/" className="text-white cursor-pointer hover:text-[#199C16] transition-colors" style={{ textDecoration: 'none' }}>
-        <h1 className="text">{title}</h1>
+        <div className="flex items-center gap-3">
+          <div className="text-[#199C16]">
+            <Icon icon="mdi:triangle" width="36" />
+          </div>
+          <h1 className="text">BeeC00des</h1>
+        </div>
+        {/* <h1 className="text">{title}</h1> */}
       </Link>
 
 

@@ -26,7 +26,7 @@ const FeatureSection = () => {
             <span className="w-2.5 h-2.5 rounded-full bg-[#199C16] animate-pulse"></span>
             Product Development
           </div>
-          <div className="text-6xl md:text-7xl text-[#199C16] font-light tracking-tight mb-6">
+          <div className="text-6xl md:text-7xl text-[#199C1] font-light tracking-tight mb-6">
             +10
           </div>
           <p className="text-gray-400 text-base md:text-lg leading-relaxed font-light">
@@ -50,7 +50,7 @@ const FeatureSection = () => {
       </div>
 
         <div className="flex flex-row gap-4">
-        <button className="px-6 py-3 rounded-[3px] border border-gray-500 text-white hover:bg-gray-800 transition-colors flex items-center gap-2">
+        <button className="px-6 py-3 rounded-[3px] border border-[#199C16] text-white hover:bg-[#199C16] transition-colors flex items-center gap-2">
           Book Me ↗
         </button>
         <button className="px-6 py-3 rounded-[3px] bg-[#199C16] text-white hover:bg-[#13B90F] transition-colors">

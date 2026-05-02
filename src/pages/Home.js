@@ -7,6 +7,7 @@ import Skill from '../components/sections/skillset';
 import Project from '../components/sections/project';
 import Story from '../components/sections/story';
 import { Link } from 'react-router-dom';
+import Container from 'components/layouts/Container';
 
 
 function Home() {
@@ -20,6 +21,8 @@ function Home() {
                 </Link>
 
             </div>
+
+            <Container>
 
             <Header title="BeeC00des" />
             <About
@@ -48,7 +51,7 @@ function Home() {
 
 
             <div id="gallery-section">
-                <Story mainText="Experiences & volunteering" paraText="passionate and lives" />
+                <Story mainText="Passion" paraText="Service to humanity" />
             </div>
 
 
@@ -69,6 +72,8 @@ function Home() {
                 <Footer footerItem="Git" />
                 <Footer footerItem="Netlify" />
             </div>  */}
+            </Container>
+
         </div>
     )
 }
