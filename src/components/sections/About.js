@@ -26,7 +26,7 @@ const About = ({ mainText, subText, text1, text2, text3 }) => {
 
   return (
     <div
-      className="h-[500px] mx-auto overflow-hidden flex flex-col md:flex-row gap-4 md:gap-0 lg:px-10 px-3 py-[350px]"
+      className="h-[500px] mx-auto overflow-hidden flex flex-col md:flex-row gap-4 md:gap-0 lg:px-10 px-3 py-10 lg:py-[350px]"
       ref={sectionRef}
     >
       {/* LEFT */}
