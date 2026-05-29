@@ -23,9 +23,9 @@ const Store = () => {
         email: "user@example.com", // Dummy email for demo
         amount: totalAmount > 0 ? totalAmount * 100 : 100, // Paystack amount is in kobo, must be > 0
         publicKey
-    }; 
+    };
 
-    
+
 
     const handlePaystackSuccessAction = (reference) => {
         alert("Payment complete! Reference: " + reference.reference);
@@ -59,17 +59,21 @@ const Store = () => {
                         </Link>
 
                         <div className="flex gap-4">
-                            <button
-                                onClick={() => setIsCartOpen(true)}
-                                className="relative flex items-center gap-2 border border-[#199C16] px-5 py-2 w-fit text-xs font-semibold tracking-wider hover:bg-[#199C16] hover:text-white transition-all cursor-pointer"
-                            >
-                                <Icon icon="mdi:cart" width="18" /> CART
-                                {totalQuantity > 0 && (
-                                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] rounded-full w-5 h-5 flex items-center justify-center font-bold">
-                                        {totalQuantity}
-                                    </span>
-                                )}
-                            </button>
+
+
+                            <Link to="/">
+                                <button
+                                    className="relative flex items-center gap-2 border border-[#199C16] px-5 py-2 w-fit text-xs font-semibold tracking-wider hover:bg-[#199C16] hover:text-white transition-all"
+                                >
+                                    <Icon icon="mdi:cart" width="18" /> CART
+
+                                    {totalQuantity > 0 && (
+                                        <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] rounded-full w-5 h-5 flex items-center justify-center font-bold">
+                                            {totalQuantity}
+                                        </span>
+                                    )}
+                                </button>
+                            </Link>
                             <Link to="/">
                                 <button
                                     className="flex items-center gap-2 border border-[#199C16] px-5 py-2 w-fit text-xs font-semibold tracking-wider hover:bg-[#199C16] hover:text-white transition-all"
@@ -235,7 +239,7 @@ const Store = () => {
                                 <Icon icon="mdi:close" width="24" />
                             </button>
                         </div>
-                        
+
                         <div className="flex-1 overflow-y-auto p-6 space-y-4 scrollbar-none">
                             {items.length === 0 ? (
                                 <div className="flex flex-col items-center justify-center h-full text-gray-500">
@@ -257,7 +261,7 @@ const Store = () => {
                                         </div>
                                         <div className="flex items-center gap-5">
                                             <span className="text-white font-bold font-mono text-lg">${item.totalPrice}</span>
-                                            <button 
+                                            <button
                                                 onClick={() => dispatch(removeFromCart(item.id))}
                                                 className="text-red-500 hover:text-red-400 bg-red-500/10 hover:bg-red-500/20 p-2 rounded-lg transition-colors cursor-pointer"
                                             >
@@ -275,12 +279,12 @@ const Store = () => {
                                 <span className="text-3xl font-bold text-white font-mono">${totalAmount}</span>
                             </div>
                             {items.length > 0 ? (
-                                <PaystackButton 
-                                    {...componentProps} 
+                                <PaystackButton
+                                    {...componentProps}
                                     className="w-full bg-[#199C16] hover:bg-green-600 text-white py-4 rounded-xl font-bold text-lg transition-all shadow-[0_0_20px_rgba(25,156,22,0.3)] hover:shadow-[0_0_30px_rgba(25,156,22,0.5)] cursor-pointer"
                                 />
                             ) : (
-                                <button 
+                                <button
                                     disabled
                                     className="w-full bg-[#1f2428] text-gray-500 py-4 rounded-xl font-bold text-lg cursor-not-allowed border border-[#31363B]"
                                 >
