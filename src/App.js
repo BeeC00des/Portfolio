@@ -7,7 +7,7 @@ import Store from 'pages/store/store';
 import Community from './pages/Community';
 import Services from 'pages/services/services';
 import Preloader from './components/Preloader/Preloader';
-
+import NotFound from './pages/NotFound';
 
 function App() {
   const [appLoaded, setAppLoaded] = useState(false);
@@ -42,6 +42,7 @@ function App() {
             <Route path="/store" element={<Store />} />
             <Route path="/services" element={<Services />} />
             <Route path="Community" element={<Community />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </div>
