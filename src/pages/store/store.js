@@ -59,7 +59,6 @@ const Store = () => {
                         </Link>
 
                         <div className="flex gap-4">
-
                             <div>
                                 <button
                                     onClick={() => setIsCartOpen(true)}
@@ -73,7 +72,6 @@ const Store = () => {
                                         </span>
                                     )}
                                 </button>
-
                             </div>
 
 
@@ -238,9 +236,19 @@ const Store = () => {
                             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
                                 <Icon icon="mdi:cart-outline" className="text-[#199C16]" /> Your Cart
                             </h2>
-                            <button onClick={() => setIsCartOpen(false)} className="text-gray-400 hover:text-white bg-[#14171c] p-2 rounded-full transition-colors cursor-pointer">
-                                <Icon icon="mdi:close" width="24" />
-                            </button>
+                            <div className="flex items-center gap-4">
+                                {items.length > 0 && (
+                                    <button 
+                                        onClick={() => dispatch(clearCart())}
+                                        className="text-red-500 hover:text-red-400 flex items-center gap-1 text-sm font-semibold transition-colors cursor-pointer border border-red-500/30 px-3 py-1.5 rounded-full hover:bg-red-500/10"
+                                    >
+                                        <Icon icon="mdi:delete-sweep-outline" width="18" /> Clear All
+                                    </button>
+                                )}
+                                <button onClick={() => setIsCartOpen(false)} className="text-gray-400 hover:text-white bg-[#14171c] p-2 rounded-full transition-colors cursor-pointer">
+                                    <Icon icon="mdi:close" width="24" />
+                                </button>
+                            </div>
                         </div>
 
                         <div className="flex-1 overflow-y-auto p-6 space-y-4 scrollbar-none">
