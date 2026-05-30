@@ -9,6 +9,7 @@ import Footer from 'components/layouts/Footer';
 import { Icon } from '@iconify/react';
 import Container from 'components/layouts/Container';
 import Header from 'components/layouts/Header';
+import Erazer from "../../assets/images/erazer.jpeg"
 
 const Store = () => {
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -118,24 +119,24 @@ const Store = () => {
                             <section>
                                 <h2 className="text-[#199C16] text-xl font-bold mb-6  tracking-wider">Stationary</h2>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard id="tech-cards-1" title="Tech educative cards" price={10000} value="₦10,000" image={Erazer} color="#FACC15" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
                             </section>
 
@@ -146,24 +147,24 @@ const Store = () => {
                             <section>
                                 <h2 className="text-[#199C16] text-xl font-bold mb-6  tracking-wider">Swag</h2>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
                             </section>
 
@@ -172,24 +173,24 @@ const Store = () => {
                             <section>
                                 <h2 className="text-[#199C16] text-xl font-bold mb-6  tracking-wider">Template</h2>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
                             </section>
                         </TabsContent>
@@ -197,24 +198,24 @@ const Store = () => {
                             <section>
                                 <h2 className="text-[#199C16] text-xl font-bold mb-6  tracking-wider">Books</h2>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
-                                    <StatCard title="Recreation" value="12822" icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="3241445" icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="242425" icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    <StatCard title="Photograph" value="757546" icon="mdi:camera" color="#EAB308" />
+                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
+                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
+                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
                             </section>
                         </TabsContent>
@@ -262,16 +263,20 @@ const Store = () => {
                                 items.map((item) => (
                                     <div key={item.id} className="flex items-center justify-between bg-[#14171c] p-4 rounded-xl border border-[#31363B]/50 shadow-sm hover:border-[#199C16]/30 transition-colors">
                                         <div className="flex items-center gap-4">
-                                            <div className="bg-[#1f2428] p-3 rounded-lg border border-[#31363B]">
-                                                <Icon icon={item.icon || "mdi:package-variant"} style={{ color: item.color || '#199C16' }} className="text-2xl" />
+                                            <div className="bg-[#1f2428] p-3 rounded-lg border border-[#31363B] w-12 h-12 flex items-center justify-center overflow-hidden">
+                                                {item.image ? (
+                                                    <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                                                ) : (
+                                                    <Icon icon={item.icon || "mdi:package-variant"} style={{ color: item.color || '#199C16' }} className="text-2xl" />
+                                                )}
                                             </div>
                                             <div>
                                                 <h4 className="text-white font-semibold text-lg">{item.title}</h4>
-                                                <p className="text-gray-400 text-sm font-mono">${item.price} x {item.quantity}</p>
+                                                <p className="text-gray-400 text-sm font-mono">₦{item.price.toLocaleString()} x {item.quantity}</p>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-5">
-                                            <span className="text-white font-bold font-mono text-lg">${item.totalPrice}</span>
+                                            <span className="text-white font-bold font-mono text-lg">₦{item.totalPrice.toLocaleString()}</span>
                                             <button
                                                 onClick={() => dispatch(removeFromCart(item.id))}
                                                 className="text-red-500 hover:text-red-400 bg-red-500/10 hover:bg-red-500/20 p-2 rounded-lg transition-colors cursor-pointer"
@@ -287,7 +292,7 @@ const Store = () => {
                         <div className="p-6 border-t border-[#31363B] bg-[#14171c] z-10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
                             <div className="flex justify-between items-center mb-6">
                                 <span className="text-gray-400 text-lg">Total Amount</span>
-                                <span className="text-3xl font-bold text-white font-mono">${totalAmount}</span>
+                                <span className="text-3xl font-bold text-white font-mono">₦{totalAmount.toLocaleString()}</span>
                             </div>
                             {items.length > 0 ? (
                                 <PaystackButton

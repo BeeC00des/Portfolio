@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../../redux/cartSlice';
 
-const StatCard = ({ id, title, value, price, icon, color }) => {
+const StatCard = ({ id, title, value, price, icon, color, image }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
@@ -12,18 +12,28 @@ const StatCard = ({ id, title, value, price, icon, color }) => {
       title,
       price: price || 10, // dummy price if not provided
       icon,
-      color
+      color,
+      image
     }));
   };
 
   return (
-    <div className="bg-[#14171c] rounded-xl p-5 flex flex-col justify-between relative hover:-translate-y-1 transition-transform cursor-pointer shadow-lg border border-[#31363B]/50 h-auto min-h-[160px]">
-      <div className="absolute top-4 right-4">
-        <Icon icon={icon} className="text-2xl" style={{ color: color }} />
-      </div>
-      <div>
+    <div className="bg-[#14171c] rounded-xl p-5 flex flex-col justify-between relative hover:-translate-y-1 transition-transform cursor-pointer shadow-lg border border-[#31363B]/50 h-auto min-h-[160px] overflow-hidden">
+      {!image && (
+        <div className="absolute top-4 right-4 z-10">
+          <Icon icon={icon} className="text-2xl" style={{ color: color }} />
+        </div>
+      )}
+      
+      {image && (
+        <div className="-mx-5 -mt-5 mb-4 h-40 bg-gray-800 relative overflow-hidden">
+          <img src={image} alt={title} className="w-full h-full object-cover" />
+        </div>
+      )}
+
+      <div className="z-10">
         <h3 className="text-white text-lg font-bold mb-1 mt-1">{title}</h3>
-        <p className="text-gray-400 text-sm font-mono mb-4">{value}</p>
+        <p className="text-[#199C16] text-sm font-mono mb-4">{value}</p>
       </div>
       <button 
         onClick={handleAddToCart}
