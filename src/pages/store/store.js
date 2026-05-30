@@ -60,9 +60,9 @@ const Store = () => {
 
                         <div className="flex gap-4">
 
-
-                            <Link to="/">
+                            <div>
                                 <button
+                                    onClick={() => setIsCartOpen(true)}
                                     className="relative flex items-center gap-2 border border-[#199C16] px-5 py-2 w-fit text-xs font-semibold tracking-wider hover:bg-[#199C16] hover:text-white transition-all"
                                 >
                                     <Icon icon="mdi:cart" width="18" /> CART
@@ -73,7 +73,10 @@ const Store = () => {
                                         </span>
                                     )}
                                 </button>
-                            </Link>
+
+                            </div>
+
+
                             <Link to="/">
                                 <button
                                     className="flex items-center gap-2 border border-[#199C16] px-5 py-2 w-fit text-xs font-semibold tracking-wider hover:bg-[#199C16] hover:text-white transition-all"
