@@ -37,18 +37,17 @@ function Home() {
                     subText="I'm Bolarinwa Ajayi"
 
 
-                    text3="I help founders, teams, and brands design, build, and maintain web applications that don’t just function—they attract users, communicate value clearly, and keep customers coming back. By combining strong frontend engineering with a deep focus on user experience, I turn complex ideas into fast, scalable, and intuitive digital products that work seamlessly for both technical and non-technical audiences"
+                   
 
 
-                    text1="A creative 
-    Software Developer skilled at frontend engineering  for webs service 
-    crafting responsive and beautiful user interface 
-    embedded with great functionalities and interact with web servers."
+                    text1="I'm a Developer Relations Engineer passionate about building tech products, communicating technical ideas clearly, and helping businesses turn concepts into products people actually use."
 
-                    text2="
-    I'm passionate about innovating software solutions and impacting my community. 
-    I have three years experience working and volunteering 
-    for organizations. Check my Works" />
+                    text2=" My journey started in frontend engineering, then grew into community management and technical writing, where I discovered my love for teaching, documentation, and helping developers adopt new tools. Today, I combine all three: building products, writing about them, and helping the people who use them succeed." 
+
+
+                     text3="I help founders, teams, and brands design and maintain web applications and integrations that communicate value clearly, attract the right users, and keep them engaged, bringing both technical depth and genuine care for how people experience technology."
+
+                     text4="With over 9 years of experience in tech across engineering, developer relations, and community roles, I bridge the gap between what's built and what's understood, because a great product is only as good as how clearly it communicates and how seamlessly people can use it." />
 
 
 

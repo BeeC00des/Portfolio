@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useRef, useState } from 'react';
 
-const About = ({ mainText, subText, text1, text2, text3 }) => {
+const About = ({ mainText, subText, text1, text2, text3, text4 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -65,6 +65,10 @@ const About = ({ mainText, subText, text1, text2, text3 }) => {
 
           <p className="aboutText text-sm md:text-[inherit]">
             {text3}
+          </p>
+
+          <p className="aboutText text-sm md:text-[inherit]">
+            {text4}
           </p>
         </div>
       </div>
