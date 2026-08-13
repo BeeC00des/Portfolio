@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/layouts/Header';
 import Button from '../components/Buttons/specialBtn';
 import Footer from '../components/layouts/Footer';
@@ -6,11 +6,22 @@ import About from '../components/sections/About';
 import Skill from '../components/sections/skillset';
 import Project from '../components/sections/project';
 import Story from '../components/sections/story';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Container from 'components/layouts/Container';
 
 
 function Home() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.slice(1));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    }, [location]);
+
     return (
         <div>
             <div className='flex justify-end gap-4'>
@@ -40,7 +51,7 @@ function Home() {
                    
 
 
-                    text1="I'm a Developer Relations Engineer passionate about building tech products, communicating technical ideas clearly, and helping businesses turn concepts into products people actually use."
+                    text1="I'm a solutions engineer, passionate about building tech products, communicating technical ideas clearly, and helping businesses turn concepts into products people actually use."
 
                     text2=" My journey started in frontend engineering, then grew into community management and technical writing, where I discovered my love for teaching, documentation, and helping developers adopt new tools. Today, I combine all three: building products, writing about them, and helping the people who use them succeed." 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "components/layouts/Header";
-import IdeaSection from "./_components/IdeaSection";
+// import IdeaSection from "./_components/IdeaSection";
 import HeroSection from "./_components/HeroSection";
 import FeatureSection from "./_components/FeatureSection";
 import PricingSection from "./_components/PricingSection";
@@ -27,7 +27,7 @@ const Services = () => {
       </div>
       <Container>
         <Header title="BeeC00des" showNav={false} />
-        <IdeaSection />
+        {/* <IdeaSection /> */}
         <HeroSection />
         <FeatureSection />
         <PricingSection />

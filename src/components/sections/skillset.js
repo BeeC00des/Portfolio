@@ -6,10 +6,6 @@ let Logo1 = require("../../assets/icons/logos_javascript.png");
 let Logo2 = require("../../assets/icons/git-logo.png");
 let Logo3 = require("../../assets/icons/css-logo.png");
 let Logo4 = require("../../assets/icons/logo-html.png");
-let Logo5 = require("../../assets/icons/logos_figma.png");
-let Logo6 = require("../../assets/icons/logos_firebase.png");
-let Logo7 = require("../../assets/icons/React.png");
-let Logo8 = require("../../assets/icons/vue.png");
 
 const Skill = ({ mainText }) => {
   return (
@@ -50,12 +46,9 @@ const Skill = ({ mainText }) => {
                 <Card img={Logo3} text="CSS" />
 
                 <Card img={Logo4} text="Html5" />
-                <Card img={Logo5} text="Figma" />
-                <Card img={Logo6} text="Firebase" />
-
-                <Card img={Logo7} text="React" />
-                <Card img={Logo8} text="Vue" />
-                <Card img="https://img.icons8.com/color/48/nextjs.png" text="Next.js" />
+                <Card img="https://img.icons8.com/color/48/python.png" text="Python" />
+                <Card img="https://img.icons8.com/fluency/48/sql.png" text="SQL" />
+                <Card img="https://img.icons8.com/fluency/48/database.png" text="Database" />
               </div>
             </TabsContent>
 

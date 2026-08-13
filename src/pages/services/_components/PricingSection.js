@@ -1,10 +1,8 @@
 import React from 'react';
 
+const CONTACT_EMAIL = 'Ajayibcd@gmail.com';
+
 const PricingSection = () => {
-  const handleContactClick = () => {
-    // Replace this with your actual logic (modal, route, etc.)
-    console.log("Contact clicked");
-  };
 
   return (
     <div className="flex flex-col mt-32 mb-24 w-full">
@@ -81,11 +79,14 @@ const PricingSection = () => {
               {plan.price}
             </div>
 
-            <button className="mt-auto pt-8 w-full">
+            <a
+              href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`${plan.title} plan enquiry`)}`}
+              className="mt-auto pt-8 w-full block"
+            >
               <div className="w-full bg-[#2a2f38] hover:bg-[#199C16] text-white py-3 rounded-[3px] text-sm transition-colors text-center font-medium">
                 {plan.button}
               </div>
-            </button>
+            </a>
           </div>
         ))}
       </div>
@@ -125,8 +126,8 @@ const PricingSection = () => {
           </div>
 
           <div>
-            <button
-              onClick={handleContactClick}
+            <a
+              href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Let's talk")}`}
               className="inline-flex items-center gap-2 text-white border-b border-white hover:text-[#199C16] hover:border-[#199C16] pb-1 transition-colors text-lg font-medium"
             >
               Let's talk.
@@ -143,7 +144,7 @@ const PricingSection = () => {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
