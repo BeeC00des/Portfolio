@@ -115,35 +115,28 @@ const Store = () => {
                         </TabsList>
 
 
-                        <TabsContent value="stationary" className="space-y-12 animate-in fade-in duration-500">
+                        <TabsContent value="stationary" className="space-y-12 animate-in fade-in duration-500 mb-20">
                             <section>
                                 <h2 className="text-[#199C16] text-xl font-bold mb-6  tracking-wider">Stationary</h2>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                                     <StatCard id="tech-cards-1" title="Tech educative cards" price={10000} value="₦10,000" image={Erazer} color="#FACC15" />
                                     <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
                                     <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    {/* <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" /> */}
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
 
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
                                     <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
                                     <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
                                     <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    {/* <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" /> */}
-                                </div>
-
-                                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-10">
-                                    <StatCard title="Recreation" value="₦12,822" price={12822} icon="mdi:microphone" color="#EF4444" />
-                                    <StatCard title="Social" value="₦3,241,445" price={3241445} icon="mdi:chat-processing" color="#10B981" />
-                                    <StatCard title="Education" value="₦242,425" price={242425} icon="mdi:book-open-page-variant" color="#3B82F6" />
-                                    {/* <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" /> */}
+                                    <StatCard title="Photograph" value="₦757,546" price={757546} icon="mdi:camera" color="#EAB308" />
                                 </div>
                             </section>
 
 
                         </TabsContent>
 
-                        <TabsContent value="swags" className="space-y-12 animate-in fade-in duration-500">
+                        <TabsContent value="swags" className="space-y-12 animate-in fade-in duration-500 mb-20">
                             <section>
                                 <h2 className="text-[#199C16] text-xl font-bold mb-6  tracking-wider">Swag</h2>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
@@ -169,7 +162,7 @@ const Store = () => {
                             </section>
 
                         </TabsContent>
-                        <TabsContent value="template" className="space-y-12 animate-in fade-in duration-500">
+                        <TabsContent value="template" className="space-y-12 animate-in fade-in duration-500 mb-20">
                             <section>
                                 <h2 className="text-[#199C16] text-xl font-bold mb-6  tracking-wider">Template</h2>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
