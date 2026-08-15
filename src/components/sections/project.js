@@ -105,6 +105,11 @@ const Project = ({ mainText, onClick }) => {
                   link="https://test-docs-amber.vercel.app/"
                 />
 
+                <Card
+                  title="General writing - I share things about life."
+                  text="I share practical lessons about life, work, growth, and everything in between, breaking them down in a way that feels honest, fun, and relatable."
+                />
+
               </div>
             </div>
           </TabsContent>

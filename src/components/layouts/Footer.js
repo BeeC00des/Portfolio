@@ -28,11 +28,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden text-white mt-12">
-      <div className="absolute inset-0 opacity-25 pointer-events-none">
+    <footer className="relative text-white mt-12">
+      <div className="absolute inset-0 opacity-25 pointer-events-none overflow-hidden">
         <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 100 100">
-          <path d="M0,100 L60,0 L120,100" stroke="#199C16" strokeWidth="0.5" fill="none" />
-          <path d="M30,100 L70,30 L110,100" stroke="#199C16" strokeWidth="0.5" fill="none" />
+          <path d="M0,100 L66,0 L100,100" stroke="#199C16" strokeWidth="0.5" fill="none" />
+          <path d="M30,100 L66,30 L90,100" stroke="#199C16" strokeWidth="0.5" fill="none" />
         </svg>
       </div>
 
@@ -151,7 +151,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom bar */}
-      <div className="bg-[#199C16] py-4 text-center text-white text-xs font-semibold">
+      <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-[#199C16] py-4 text-center text-white text-xs font-semibold">
         Copyright © {new Date().getFullYear()}, Beec00des, All Rights Reserved.
       </div>
     </footer>
