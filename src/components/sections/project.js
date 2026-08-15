@@ -53,15 +53,15 @@ const Project = ({ mainText, onClick }) => {
             <div className="sectiond mt-8 w-full px-[25px] py-0 mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card title="Cardio" year="2021" text="Interface heart disease awareness and prediction using ml models." link="https://tender-pare-05e51b.netlify.app/" />
-                <Card title="Event Ticket" year="2022" text="A platform for booking music event ticket and watch live concert" link="https://www.trialoguemedia.com" />
-                <Card title="Zacrac Learning" year="2021" text="Contributed to development of an elearing platform" link="https://zacraclearning.com" />
+                <Card title="CareerLeap" year="2024" text="A career simulation platform where international professionals gain practical IT, Data, or Marketing experience with coaching for the German job market" link="https://www.career-leap.academy/" />
+                <Card title="Monnify Store" year="2024" text="An e-commerce storefront demo with Monnify payment integration" link="https://monnifystore.netlify.app/" />
                 <Card title="Tic-tac-toe" year="2021" text="A interface for create set of X’s or 0’s vertically or horizontally" link="https://beec00des.github.io/tic-tac-toe-app/index.html" />
                 <Card title="Snake Game" year="2021" text="An interface for the old moving snake in a box swallowing balls" link="https://stoic-mayer-53eec9.netlify.app/" />
+                <Card title="Event Ticket" year="2022" text="A platform for booking music event ticket and watch live concert" link="https://www.trialoguemedia.com" />
+                <Card title="Zacrac Learning" year="2021" text="Contributed to development of an elearing platform" link="https://zacraclearning.com" />
+                
                 <Card title="Appointment Booking app" year="2023" text="Easy to use application for appointment schedule" link="https://roberttaylormedia.com" />
-                <Card title="Monnify API Docs" year="2024" text="Documentation site for Monnify, a financial API platform for payment collections, disbursements, and wallet transfers" link="https://test-docs-amber.vercel.app/" />
-                <Card title="CareerLeap" year="2024" text="A career simulation platform where international professionals gain practical IT, Data, or Marketing experience with coaching for the German job market" link="https://www.career-leap.academy/" />
                 {/* <Card title="SeaSeis Geophysical" year="2024" text="A regional geo-science and engineering services provider specializing in marine seismic data acquisition and oil & gas consultancy" link="https://seaseisgeo.com/" /> */}
-                <Card title="Monnify Store" year="2024" text="An e-commerce storefront demo with Monnify payment integration" link="https://monnifystore.netlify.app/" />
               </div>
             </div>
           </TabsContent>
@@ -96,6 +96,13 @@ const Project = ({ mainText, onClick }) => {
                   text="How effective communication serves as the fundamental bridge towards optimal problem solving inside dynamic tech ecosystems."
                   year="Aug 14, 2022"
                   link="https://beec00des.hashnode.dev/communication-towards-problem-solving"
+                />
+
+                <Card
+                  title="Monnify API Docs"
+                  text="Documentation site for Monnify, a financial API platform for payment collections, disbursements, and wallet transfers"
+                  year="2024"
+                  link="https://test-docs-amber.vercel.app/"
                 />
 
               </div>
