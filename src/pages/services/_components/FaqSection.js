@@ -20,7 +20,7 @@ const FaqItem = ({ question, answer }) => {
         className="w-full py-6 flex justify-between items-center text-left group focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg md:text-xl text-gray-300 group-hover:text-[#199C16] transition-colors pr-4">
+        <span className="text text-gray-300 group-hover:text-[#199C16] transition-colors pr-4">
           {question}
         </span>
         <svg
@@ -35,7 +35,7 @@ const FaqItem = ({ question, answer }) => {
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
       >
-        <p className="text-gray-400 font-light text-base md:text-lg pr-8">
+        <p className="text-gray-400 smallText pr-8">
           {answer}
         </p>
       </div>
@@ -46,7 +46,7 @@ const FaqItem = ({ question, answer }) => {
 const FaqSection = () => {
   return (
     <div className="flex flex-col items-center mt-12 mb-32 px-6 w-full max-w-4xl mx-auto">
-      <h2 className="text-[#199C16] text-4xl md:text-5xl lg:text-6xl tracking-tight mb-12 text-center">
+      <h2 className="text-[#199C16] bigText text-3xl md:text-[inherit] tracking-tight mb-12 text-center">
         Reviews And Testimonials
       </h2>
       <div className="w-full border-t border-gray-800">

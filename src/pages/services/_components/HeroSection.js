@@ -14,7 +14,7 @@ const HeroSection = () => {
           <path d="M20 13h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1" />
           <path d="M4 13H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1" />
         </svg>
-         <h2 className="text-4xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight text-white">
+         <h2 className="bigText text-3xl md:text-[inherit] leading-[1.1] tracking-tight text-white">
         Brand <span className="text-[#199C16]">Builds</span> up
       </h2>
       </div>
