@@ -48,17 +48,14 @@ function Home() {
                     subText="I'm Bolarinwa Ajayi"
 
 
-                   
-
-
                     text1="I'm a solutions engineer, passionate about building tech products, communicating technical ideas clearly, and helping businesses turn concepts into products people actually use."
 
-                    text2=" My journey started in frontend engineering, then grew into community management and technical writing, where I discovered my love for teaching, documentation, and helping developers adopt new tools. Today, I combine all three: building products, writing about them, and helping the people who use them succeed." 
+                    text2=" My journey started in frontend engineering, then grew into community management and technical writing, where I discovered my love for teaching, documentation, and helping developers adopt new tools. Today, I combine all three: building products, writing about them, and helping the people who use them, to succeed." 
 
 
-                     text3="I help founders, teams, and brands design and maintain web applications and integrations that communicate value clearly, attract the right users, and keep them engaged, bringing both technical depth and genuine care for how people experience technology."
+                    text3="I help organisations, teams and individuals develop and maintain web applications that communicate value clearly, attract the right users and keep them engaged, i bring both technical depth and genuine care for how people experience technology."
 
-                     text4="With over 9 years of experience in tech across engineering, developer relations, and community roles, I bridge the gap between what's built and what's understood, because a great product is only as good as how clearly it communicates and how seamlessly people can use it." />
+                    text4="I have amassed over 6 years of experience in tech, cutting across engineering, developer relations and community roles, bridging the gap between what's built and what's understood, because a great product is only as good as how clearly it communicates and how seamlessly people can use it." />
 
 
 
