@@ -5,16 +5,16 @@ const Button = ({ color, text, onClick, link }) => {
   return (
     <button
       onClick={onClick}
-      style={{ backgroundColor: color }}
+      style={color ? { backgroundColor: color } : undefined}
       className='btn'
     >
-     <Link to={link} >{text}</Link> 
+     <Link to={link} >{text}</Link>
     </button>
   )
 }
 
 Button.defaultProps = {
- color: 'black',
+ color: undefined,
 }
 
 Button.propTypes = {

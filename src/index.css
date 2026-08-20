@@ -13,6 +13,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
+:root {
+  --background: #010001;
+  --foreground: rgba(255, 255, 255, 0.89);
+  --card: #14171c;
+  --card-muted: #1f2428;
+  --border: #31363B;
+  --muted-foreground: #9aa0a6;
+}
+
+.light {
+  --background: #ffffff;
+  --foreground: #14171c;
+  --card: #f1f3f4;
+  --card-muted: #e6e8ea;
+  --border: #d8dbdd;
+  --muted-foreground: #5f6368;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,15 +39,16 @@
 
 
 body {
-  color:rgba(255, 255, 255, 0.89);
+  color: var(--foreground);
   font-family: 'Space Mono', monospace;
-  background-color: #010001;
+  background-color: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .testContainer{
-  color:rgba(255, 255, 255, 0.89);
+  color: var(--foreground);
   font-family: 'Space Mono', monospace;
-  background-color: #010001;
+  background-color: var(--background);
 }
 
 .header {
@@ -128,7 +147,7 @@ body {
 }
 
 a{
-  color:white;
+  color: var(--foreground);
   text-decoration: none;
 }
 
@@ -186,8 +205,8 @@ a{
   width:30%;
   height:80px;
   border-radius:5px;
-  background-color: #31363B;
-  color:white;
+  background-color: var(--card-muted);
+  color: var(--foreground);
   font-weight: 300;
 }
 
@@ -229,9 +248,9 @@ a{
 
 
 .btn {
-  background-color:#000;
+  background-color: var(--card);
   color: #13B90F;
-  border: 1px solid #fff;
+  border: 1px solid var(--border);
   padding: 6px 20px;
   cursor: pointer;
   border-radius: 5px;

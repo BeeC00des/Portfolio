@@ -52,7 +52,7 @@ const Store = () => {
             </Container>
 
 
-            <div className="text-white p-6 md:p-12 font-mono" style={{ backgroundColor: '#010001' }}>
+            <div className="text-foreground bg-background p-6 md:p-12 font-mono">
                 <div className="max-w-6xl mx-auto">
                     <div className='flex justify-between'>
                         <Link to="/">
@@ -87,28 +87,28 @@ const Store = () => {
                     </div>
 
                     <Tabs defaultValue="stationary" className="flex flex-col md:flex-row gap-6 md:gap-10">
-                        <TabsList className="flex flex-row md:flex-col w-full md:w-[200px] md:h-[600px] h-fit lg:h-fit lg:bg-[#14171c] border border-[#31363B] mb-6 md:mb-10 p-2 gap-2 md:gap-1 overflow-x-auto scrollbar-none">
+                        <TabsList className="flex flex-row md:flex-col w-full md:w-[200px] md:h-[600px] h-fit lg:h-fit lg:bg-card border border-border mb-6 md:mb-10 p-2 gap-2 md:gap-1 overflow-x-auto scrollbar-none">
                             <TabsTrigger
                                 value="stationary"
-                                className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-1.5 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+                                className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-1.5 rounded-md text-muted-foreground hover:text-foreground hover:bg-card-muted data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
                             >
                                 Stationary
                             </TabsTrigger>
                             <TabsTrigger
                                 value="swags"
-                                className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-1.5 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+                                className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-1.5 rounded-md text-muted-foreground hover:text-foreground hover:bg-card-muted data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
                             >
                                 Swags
                             </TabsTrigger>
                             <TabsTrigger
                                 value="template"
-                                className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-1.5 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+                                className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-1.5 rounded-md text-muted-foreground hover:text-foreground hover:bg-card-muted data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
                             >
                                 Template
                             </TabsTrigger>
                             <TabsTrigger
                                 value="books"
-                                className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-1.5 rounded-md text-gray-400 hover:text-white hover:bg-[#1f2428] data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+                                className="flex-shrink-0 md:w-full justify-center md:justify-start whitespace-nowrap px-4 py-1.5 rounded-md text-muted-foreground hover:text-foreground hover:bg-card-muted data-[state=active]:bg-[#199C16] data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
                             >
                                 Books
                             </TabsTrigger>
@@ -225,21 +225,21 @@ const Store = () => {
             {/* Cart Sidebar */}
             {isCartOpen && (
                 <div className="fixed inset-0 z-50 flex justify-end bg-black bg-opacity-60 backdrop-blur-sm transition-all duration-300">
-                    <div className="w-full max-w-md bg-[#0a0c10] h-full shadow-2xl border-l border-[#31363B] flex flex-col animate-in slide-in-from-right duration-300">
-                        <div className="flex items-center justify-between p-6 border-b border-[#31363B]">
-                            <h2 className="text-2xl font-bold text-white flex items-center gap-3">
+                    <div className="w-full max-w-md bg-background h-full shadow-2xl border-l border-border flex flex-col animate-in slide-in-from-right duration-300">
+                        <div className="flex items-center justify-between p-6 border-b border-border">
+                            <h2 className="text-2xl font-bold text-foreground flex items-center gap-3">
                                 <Icon icon="mdi:cart-outline" className="text-[#199C16]" /> Your Cart
                             </h2>
                             <div className="flex items-center gap-4">
                                 {items.length > 0 && (
-                                    <button 
+                                    <button
                                         onClick={() => dispatch(clearCart())}
                                         className="text-red-500 hover:text-red-400 flex items-center gap-1 text-sm font-semibold transition-colors cursor-pointer border border-red-500/30 px-3 py-1.5 rounded-full hover:bg-red-500/10"
                                     >
                                         <Icon icon="mdi:delete-sweep-outline" width="18" /> Clear All
                                     </button>
                                 )}
-                                <button onClick={() => setIsCartOpen(false)} className="text-gray-400 hover:text-white bg-[#14171c] p-2 rounded-full transition-colors cursor-pointer">
+                                <button onClick={() => setIsCartOpen(false)} className="text-muted-foreground hover:text-foreground bg-card p-2 rounded-full transition-colors cursor-pointer">
                                     <Icon icon="mdi:close" width="24" />
                                 </button>
                             </div>
@@ -247,16 +247,16 @@ const Store = () => {
 
                         <div className="flex-1 overflow-y-auto p-6 space-y-4 scrollbar-none">
                             {items.length === 0 ? (
-                                <div className="flex flex-col items-center justify-center h-full text-gray-500">
+                                <div className="flex flex-col items-center justify-center h-full text-muted-foreground">
                                     <Icon icon="mdi:cart-remove" width="64" className="mb-4 opacity-50" />
                                     <p className="text-lg">Your cart is empty.</p>
-                                    <p className="text-sm mt-2 text-gray-600">Add some items to get started!</p>
+                                    <p className="text-sm mt-2 text-muted-foreground">Add some items to get started!</p>
                                 </div>
                             ) : (
                                 items.map((item) => (
-                                    <div key={item.id} className="flex items-center justify-between bg-[#14171c] p-4 rounded-xl border border-[#31363B]/50 shadow-sm hover:border-[#199C16]/30 transition-colors">
+                                    <div key={item.id} className="flex items-center justify-between bg-card p-4 rounded-xl border border-border/50 shadow-sm hover:border-[#199C16]/30 transition-colors">
                                         <div className="flex items-center gap-4">
-                                            <div className="bg-[#1f2428] p-3 rounded-lg border border-[#31363B] w-12 h-12 flex items-center justify-center overflow-hidden">
+                                            <div className="bg-card-muted p-3 rounded-lg border border-border w-12 h-12 flex items-center justify-center overflow-hidden">
                                                 {item.image ? (
                                                     <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                                                 ) : (
@@ -264,12 +264,12 @@ const Store = () => {
                                                 )}
                                             </div>
                                             <div>
-                                                <h4 className="text-white font-semibold text-lg">{item.title}</h4>
-                                                <p className="text-gray-400 text-sm font-mono">₦{item.price.toLocaleString()} x {item.quantity}</p>
+                                                <h4 className="text-foreground font-semibold text-lg">{item.title}</h4>
+                                                <p className="text-muted-foreground text-sm font-mono">₦{item.price.toLocaleString()} x {item.quantity}</p>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-5">
-                                            <span className="text-white font-bold font-mono text-lg">₦{item.totalPrice.toLocaleString()}</span>
+                                            <span className="text-foreground font-bold font-mono text-lg">₦{item.totalPrice.toLocaleString()}</span>
                                             <button
                                                 onClick={() => dispatch(removeFromCart(item.id))}
                                                 className="text-red-500 hover:text-red-400 bg-red-500/10 hover:bg-red-500/20 p-2 rounded-lg transition-colors cursor-pointer"
@@ -282,10 +282,10 @@ const Store = () => {
                             )}
                         </div>
 
-                        <div className="p-6 border-t border-[#31363B] bg-[#14171c] z-10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+                        <div className="p-6 border-t border-border bg-card z-10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
                             <div className="flex justify-between items-center mb-6">
-                                <span className="text-gray-400 text-lg">Total Amount</span>
-                                <span className="text-3xl font-bold text-white font-mono">₦{totalAmount.toLocaleString()}</span>
+                                <span className="text-muted-foreground text-lg">Total Amount</span>
+                                <span className="text-3xl font-bold text-foreground font-mono">₦{totalAmount.toLocaleString()}</span>
                             </div>
                             {items.length > 0 ? (
                                 <PaystackButton
@@ -295,7 +295,7 @@ const Store = () => {
                             ) : (
                                 <button
                                     disabled
-                                    className="w-full bg-[#1f2428] text-gray-500 py-4 rounded-xl font-bold text-lg cursor-not-allowed border border-[#31363B]"
+                                    className="w-full bg-card-muted text-muted-foreground py-4 rounded-xl font-bold text-lg cursor-not-allowed border border-border"
                                 >
                                     Checkout
                                 </button>

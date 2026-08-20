@@ -21,36 +21,36 @@ const FeatureSection = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto w-full py-10">
         {/* Card 1 */}
-        <div className="bg-[#14171c] p-8 md:p-10 rounded-[5px] border border-gray-800">
-          <div className="flex items-center gap-3 mb-6 smallText text-gray-400">
+        <div className="bg-card p-8 md:p-10 rounded-[5px] border border-border">
+          <div className="flex items-center gap-3 mb-6 smallText text-muted-foreground">
             <span className="w-2.5 h-2.5 rounded-full bg-[#199C16] animate-pulse"></span>
             Product Development
           </div>
           <div className="bigText text-[#199C16] tracking-tight mb-6">
             +10
           </div>
-          <p className="text-gray-400 smallText leading-relaxed">
+          <p className="text-muted-foreground smallText leading-relaxed">
             I’ve built over 10 web projects and managed applications for both individuals and organizations. My work focuses on delivering practical, reliable digital solutions while ensuring smooth application management and performance across different use cases
           </p>
         </div>
 
         {/* Card 2 */}
-        <div className="bg-[#14171c] p-8 md:p-10 rounded-[5px] border border-gray-800">
-          <div className="flex items-center gap-3 mb-6 smallText text-gray-400">
+        <div className="bg-card p-8 md:p-10 rounded-[5px] border border-border">
+          <div className="flex items-center gap-3 mb-6 smallText text-muted-foreground">
             <span className="w-2.5 h-2.5 rounded-full bg-[#199C16] animate-pulse"></span>
             Technical Consultation
           </div>
           <div className="bigText text-[#199C16] tracking-tight mb-6">
             +20
           </div>
-          <p className="text-gray-400 smallText leading-relaxed">
+          <p className="text-muted-foreground smallText leading-relaxed">
             I provide technical consultation covering both product review and career guidance. This includes reviewing systems for improvements in design and reliability, as well as supporting engineers with career growth, role transitions, and interview preparation. The goal is clear, practical advice that improves both product outcomes and professional direction.
           </p>
         </div>
       </div>
 
         <div className="flex flex-row gap-4">
-        <button className="px-5 py-2.5 text-[15px] rounded-bl-[3px] border border-[#199C16] text-white hover:bg-[#199C16] transition-colors flex items-center gap-2">
+        <button className="px-5 py-2.5 text-[15px] rounded-bl-[3px] border border-[#199C16] text-foreground hover:bg-[#199C16] transition-colors flex items-center gap-2">
           Book Me ↗
         </button>
         <button className="px-5 py-2.5 text-[15px] rounded-bl-[3px] bg-[#199C16] text-white hover:bg-[#13B90F] transition-colors">

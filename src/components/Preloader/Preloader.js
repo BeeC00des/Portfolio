@@ -37,19 +37,19 @@ const Preloader = ({ onComplete }) => {
   return (
     <div className="fixed inset-0 z-50 pointer-events-none flex overflow-hidden bg-transparent">
       {/* Background halves */}
-      <div 
-        className={`absolute top-0 left-0 w-1/2 h-full bg-[#010001] transition-transform duration-1000 ease-[cubic-bezier(0.77,0,0.175,1)] ${
+      <div
+        className={`absolute top-0 left-0 w-1/2 h-full bg-background transition-transform duration-1000 ease-[cubic-bezier(0.77,0,0.175,1)] ${
           splitBg ? '-translate-x-full' : 'translate-x-0'
         }`}
       />
-      <div 
-        className={`absolute top-0 right-0 w-1/2 h-full bg-[#010001] transition-transform duration-1000 ease-[cubic-bezier(0.77,0,0.175,1)] ${
+      <div
+        className={`absolute top-0 right-0 w-1/2 h-full bg-background transition-transform duration-1000 ease-[cubic-bezier(0.77,0,0.175,1)] ${
           splitBg ? 'translate-x-full' : 'translate-x-0'
         }`}
       />
 
       {/* Text overlay */}
-      <div className="absolute inset-0 flex items-center justify-center font-mono text-sm tracking-[0.2em] text-white/90 z-10">
+      <div className="absolute inset-0 flex items-center justify-center font-mono text-sm tracking-[0.2em] text-foreground/90 z-10">
         <div className="flex gap-4">
           <span 
             className={`transition-all duration-700 ease-in-out ${

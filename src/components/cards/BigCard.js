@@ -13,7 +13,7 @@ const Card = ({ text, year, title, link }) => {
   };
 
   return (
-    <div className="w-full h-full min-h-[170px] rounded-[5px] bg-[#14171c] flex flex-col">
+    <div className="w-full h-full min-h-[170px] rounded-[5px] bg-card flex flex-col">
       <div className="cardContent">
         <div>
           <span className="supText">{year}</span>

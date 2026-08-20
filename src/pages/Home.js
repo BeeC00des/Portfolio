@@ -33,7 +33,7 @@ function Home() {
 
                 <Link to="store">
                     <Button
-                        className="bg-black border border-[#199C16] !text-[#199C16]  hover:!bg-[#199C16] hover:!text-white !transition-colors !duration-300"
+                        className="!bg-background border border-[#199C16] !text-[#199C16]  hover:!bg-[#199C16] hover:!text-white !transition-colors !duration-300"
                         text="Store"
                     />
                 </Link>

@@ -6,11 +6,11 @@ const PricingSection = () => {
 
   return (
     <div className="flex flex-col mt-32 mb-24 w-full">
-      <h2 className="bigText text-3xl md:text-[inherit] text-white text-center tracking-tight mb-6">
+      <h2 className="bigText text-3xl md:text-[inherit] text-foreground text-center tracking-tight mb-6">
         A price for what you'll get
       </h2>
 
-      <p className="text-gray-400 subText text-center max-w-3xl mx-auto mb-16 px-6">
+      <p className="text-muted-foreground subText text-center max-w-3xl mx-auto mb-16 px-6">
         Start free consult for 30 mintues. Pay for ohter services what you use. Every plan delivers value.
       </p>
 
@@ -57,25 +57,25 @@ const PricingSection = () => {
         ].map((plan, idx) => (
           <div
             key={idx}
-            className={`bg-[#14171c] p-8 rounded-[5px] flex flex-col transition-colors duration-300 ${
+            className={`bg-card p-8 rounded-[5px] flex flex-col transition-colors duration-300 ${
               plan.highlight
                 ? "border-[#199C16] border-2 shadow-lg shadow-[#199C16]/10"
-                : "border border-gray-800 hover:border-[#199C16]"
+                : "border border-border hover:border-[#199C16]"
             }`}
           >
             {/* {plan.highlight && (
               <div className="absolute top-0 left-0 right-0 h-1 bg-[#199C16]"></div>
             )} */}
 
-            <h3 className="text text-white text-center mb-2">
+            <h3 className="text text-foreground text-center mb-2">
               {plan.title}
             </h3>
 
-            <p className="smallText text-gray-400 text-center mb-8 min-h-[40px]">
+            <p className="smallText text-muted-foreground text-center mb-8 min-h-[40px]">
               {plan.desc}
             </p>
 
-            <div className="bigText text-white text-center my-8">
+            <div className="bigText text-foreground text-center my-8">
               {plan.price}
             </div>
 
@@ -83,7 +83,7 @@ const PricingSection = () => {
               href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`${plan.title} plan enquiry`)}`}
               className="mt-auto pt-8 w-full block"
             >
-              <div className="w-full bg-[#2a2f38] hover:bg-[#199C16] text-white py-3 rounded-[3px] text-[15px] transition-colors text-center">
+              <div className="w-full bg-card-muted hover:bg-[#199C16] text-foreground hover:text-white py-3 rounded-[3px] text-[15px] transition-colors text-center">
                 {plan.button}
               </div>
             </a>
@@ -96,30 +96,30 @@ const PricingSection = () => {
       {/* Bottom Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-6 mb-12 w-full mt-10">
         {/* Extra Credits */}
-        <div className="bg-[#14171c] p-10 rounded-[5px] border border-gray-800 flex flex-col justify-between hover:border-gray-600 transition-colors duration-300">
+        <div className="bg-card p-10 rounded-[5px] border border-border flex flex-col justify-between hover:border-muted-foreground/30 transition-colors duration-300">
           <div>
-            <div className="text-gray-500 smallText mb-6">
+            <div className="text-muted-foreground smallText mb-6">
               Extra Services
             </div>
-            <h3 className="text text-white mb-4 tracking-tight">
+            <h3 className="text text-foreground mb-4 tracking-tight">
               Top up
             </h3>
-            <p className="text-gray-400 smallText mb-8 leading-relaxed">
+            <p className="text-muted-foreground smallText mb-8 leading-relaxed">
                I provide hands-on training in coding and product development, focused on real-world projects that help learners build and ship working solutions.
             </p>
           </div>
         </div>
 
         {/* Enterprise */}
-        <div className="bg-[#14171c] p-10 rounded-[5px] border border-gray-800 flex flex-col justify-between hover:border-gray-600 transition-colors duration-300">
+        <div className="bg-card p-10 rounded-[5px] border border-border flex flex-col justify-between hover:border-muted-foreground/30 transition-colors duration-300">
           <div>
-            <div className="text-gray-500 smallText mb-6">
+            <div className="text-muted-foreground smallText mb-6">
               Partnerships
             </div>
-            <h3 className="text text-white mb-4 tracking-tight">
+            <h3 className="text text-foreground mb-4 tracking-tight">
               Need something bigger?
             </h3>
-             <p className="text-gray-400 smallText mb-8 leading-relaxed">
+             <p className="text-muted-foreground smallText mb-8 leading-relaxed">
                I actively support passion projects and contribute to NGOs through service and sponsorship, using my skills to create broader social impact.
             </p>
 
@@ -128,7 +128,7 @@ const PricingSection = () => {
           <div>
             <a
               href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Let's talk")}`}
-              className="inline-flex items-center gap-2 text-white border-b border-white hover:text-[#199C16] hover:border-[#199C16] pb-1 transition-colors text-[15px]"
+              className="inline-flex items-center gap-2 text-foreground border-b border-foreground hover:text-[#199C16] hover:border-[#199C16] pb-1 transition-colors text-[15px]"
             >
               Let's talk.
               <svg

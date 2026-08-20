@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col items-center font-bold text-center mt-5 px-6">
       <div className="flex items-center justify-center gap-3">
-        <svg className="w-16 h-16 text-white mb-4 md:mb-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <svg className="w-16 h-16 text-foreground mb-4 md:mb-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <rect x="4" y="9" width="16" height="11" rx="2" />
           <path d="M12 9V4" />
           <circle cx="12" cy="3" r="1" />
@@ -14,7 +14,7 @@ const HeroSection = () => {
           <path d="M20 13h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1" />
           <path d="M4 13H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1" />
         </svg>
-         <h2 className="bigText text-3xl md:text-[inherit] leading-[1.1] tracking-tight text-white">
+         <h2 className="bigText text-3xl md:text-[inherit] leading-[1.1] tracking-tight text-foreground">
         Brand <span className="text-[#199C16]">Builds</span> up
       </h2>
       </div>

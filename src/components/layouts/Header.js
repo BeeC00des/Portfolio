@@ -4,6 +4,7 @@ import Navbar from './Nav';
 import { Icon } from '@iconify/react';
 import Resume from '../../assets/images/ResumeSoft.pdf'
 import { Link } from "react-router-dom";
+import ThemeToggle from 'components/ui/ThemeToggle';
 
 const Header = ({ title, onAdd, showNav = true }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Header = ({ title, onAdd, showNav = true }) => {
     <header className="text-[10px] flex flex-wrap justify-between items-center px-[15px] md:px-[35px] my-[12px]">
 
       {/* Title */}
-      <Link to="/" className="text-white cursor-pointer hover:text-[#199C16] transition-colors" style={{ textDecoration: 'none' }}>
+      <Link to="/" className="text-foreground cursor-pointer hover:text-[#199C16] transition-colors" style={{ textDecoration: 'none' }}>
         <div className="flex items-center gap-3">
           <div className="text-[#199C16]">
             <Icon icon="mdi:triangle" width="36" />
@@ -32,18 +33,21 @@ const Header = ({ title, onAdd, showNav = true }) => {
 
 
       {/* Hamburger — mobile only (hidden when showNav is false) */}
-      {showNav && (
-        <button
-          className="flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1 md:hidden"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-          aria-expanded={menuOpen}
-        >
-          <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${menuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
-          <span className={`block w-6 h-[2px] bg-current rounded transition-opacity duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${menuOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
-        </button>
-      )}
+      <div className="flex items-center gap-3 md:hidden">
+        <ThemeToggle />
+        {showNav && (
+          <button
+            className="flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation"
+            aria-expanded={menuOpen}
+          >
+            <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${menuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
+            <span className={`block w-6 h-[2px] bg-current rounded transition-opacity duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`block w-6 h-[2px] bg-current rounded transition-transform duration-300 ${menuOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
+          </button>
+        )}
+      </div>
 
       {/* Nav links */}
       {showNav && (
@@ -56,6 +60,9 @@ const Header = ({ title, onAdd, showNav = true }) => {
           <Link to="/services" onClick={() => setMenuOpen(false)}>
             <Navbar navItem="Services" />
           </Link>
+          <div className="hidden md:block">
+            <ThemeToggle />
+          </div>
         </div>
       )}
 

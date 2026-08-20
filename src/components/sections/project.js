@@ -119,7 +119,7 @@ const Project = ({ mainText, onClick }) => {
 
               <div className="text-center mb-16 max-w-3xl mx-auto relative z-10 px-[35px]">
                 <h2 className="text-[#13B90F] font-bold text-[32px] mb-6 tracking-wide">SPEAKING ENGAGEMENTS</h2>
-                <p className="text-[rgba(255,255,255,0.89)] text-[15px] font-light leading-relaxed">
+                <p className="text-foreground text-[15px] font-light leading-relaxed">
                   Sharing knowledge, insights, and innovations with leading minds across the technology industry.
                 </p>
               </div>
@@ -135,7 +135,7 @@ const Project = ({ mainText, onClick }) => {
                     marginTop="mt-0"
                   />
                   <div className="mt-32 hidden md:block">
-                    <h3 className="text-[rgba(255,255,255,0.89)] font-bold text-[28px] leading-tight drop-shadow-lg">
+                    <h3 className="text-foreground font-bold text-[28px] leading-tight drop-shadow-lg">
                      A growing professional speaker
                     </h3>
                   </div>
@@ -173,7 +173,7 @@ const Project = ({ mainText, onClick }) => {
 
                   {/* Mobile-only text */}
                   <div className="mt-16 block md:hidden">
-                    <h3 className="text-[rgba(255,255,255,0.89)] font-bold text-2xl leading-tight text-center">
+                    <h3 className="text-foreground font-bold text-2xl leading-tight text-center">
                       This year, lineup of speaking engagements is impressive.
                     </h3>
                   </div>

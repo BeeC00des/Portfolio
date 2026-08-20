@@ -15,16 +15,16 @@ const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-800">
+    <div className="border-b border-border">
       <button
         className="w-full py-6 flex justify-between items-center text-left group focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text text-gray-300 group-hover:text-[#199C16] transition-colors pr-4">
+        <span className="text text-muted-foreground group-hover:text-[#199C16] transition-colors pr-4">
           {question}
         </span>
         <svg
-          className={`w-5 h-5 text-gray-500 group-hover:text-[#199C16] transition-transform duration-300 flex-shrink-0 ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-5 h-5 text-muted-foreground group-hover:text-[#199C16] transition-transform duration-300 flex-shrink-0 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -35,7 +35,7 @@ const FaqItem = ({ question, answer }) => {
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
       >
-        <p className="text-gray-400 smallText pr-8">
+        <p className="text-muted-foreground smallText pr-8">
           {answer}
         </p>
       </div>
@@ -49,7 +49,7 @@ const FaqSection = () => {
       <h2 className="text-[#199C16] bigText text-3xl md:text-[inherit] tracking-tight mb-12 text-center">
         Reviews And Testimonials
       </h2>
-      <div className="w-full border-t border-gray-800">
+      <div className="w-full border-t border-border">
         {faqData.map((faq, index) => (
           <FaqItem key={index} question={faq.question} answer={faq.answer} />
         ))}

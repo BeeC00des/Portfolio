@@ -18,21 +18,21 @@ const StatCard = ({ id, title, value, price, icon, color, image }) => {
   };
 
   return (
-    <div className="bg-[#14171c] rounded-xl p-5 flex flex-col justify-between relative hover:-translate-y-1 transition-transform cursor-pointer shadow-lg border border-[#31363B]/50 h-auto min-h-[160px] overflow-hidden">
+    <div className="bg-card rounded-xl p-5 flex flex-col justify-between relative hover:-translate-y-1 transition-transform cursor-pointer shadow-lg border border-border/50 h-auto min-h-[160px] overflow-hidden">
       {!image && (
         <div className="absolute top-4 right-4 z-10">
           <Icon icon={icon} className="text-2xl" style={{ color: color }} />
         </div>
       )}
-      
+
       {image && (
-        <div className="-mx-5 -mt-5 mb-4 h-40 bg-gray-800 relative overflow-hidden">
+        <div className="-mx-5 -mt-5 mb-4 h-40 bg-card-muted relative overflow-hidden">
           <img src={image} alt={title} className="w-full h-full object-cover" />
         </div>
       )}
 
       <div className="z-10">
-        <h3 className="text-white text-lg font-bold mb-1 mt-1">{title}</h3>
+        <h3 className="text-foreground text-lg font-bold mb-1 mt-1">{title}</h3>
         <p className="text-[#199C16] text-sm font-mono mb-4">{value}</p>
       </div>
       <button 

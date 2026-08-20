@@ -6,21 +6,21 @@ const ArticleCard = ({ title, excerpt, date, readTime, link, img }) => {
       href={link} 
       target="_blank" 
       rel="noreferrer" 
-      className="flex flex-col bg-[#14171c] rounded-md overflow-hidden shadow-lg border border-transparent hover:border-[#31363B] transition-colors duration-300 w-full h-full text-left"
+      className="flex flex-col bg-card rounded-md overflow-hidden shadow-lg border border-transparent hover:border-border transition-colors duration-300 w-full h-full text-left"
     >
-      <div className="h-44 w-full overflow-hidden bg-[#31363B]">
-        <img 
-          src={img} 
-          alt={title} 
-          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+      <div className="h-44 w-full overflow-hidden bg-card-muted">
+        <img
+          src={img}
+          alt={title}
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
         />
       </div>
       <div className="p-5 flex flex-col flex-1 justify-between">
         <div>
-          <h3 className="font-bold text-[rgba(255,255,255,0.89)] text-[1.1rem] leading-tight mb-3">
+          <h3 className="font-bold text-foreground text-[1.1rem] leading-tight mb-3">
             {title}
           </h3>
-          <p className="text-[13px] font-light text-[rgba(255,255,255,0.6)] leading-relaxed mb-6">
+          <p className="text-[13px] font-light text-muted-foreground leading-relaxed mb-6">
             {excerpt}
           </p>
         </div>

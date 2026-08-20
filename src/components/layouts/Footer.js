@@ -28,7 +28,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative text-white mt-12">
+    <footer className="relative text-foreground mt-12">
       <div className="absolute inset-0 opacity-25 pointer-events-none overflow-hidden">
         <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 100 100">
           <path d="M0,100 L66,0 L100,100" stroke="#199C16" strokeWidth="0.5" fill="none" />
@@ -46,7 +46,7 @@ const Footer = () => {
             <h1 className="text">BeeC00des</h1>
           </div>
 
-          <p className="text-sm font-light text-gray-300 leading-relaxed">
+          <p className="text-sm font-light text-muted-foreground leading-relaxed">
             Empowering users with great digital experiences through human-centered design and multimodal technologies
             that improve interaction, accessibility, usability, and performance outcomes.
           </p>
@@ -99,32 +99,32 @@ const Footer = () => {
         {/* Site Map */}
         <div className="flex flex-col gap-5">
           <h3 className="font-bold text-base mb-1">Site Map</h3>
-          <ul className="flex flex-col gap-4 text-sm font-light text-gray-300">
+          <ul className="flex flex-col gap-4 text-sm font-light text-muted-foreground">
             <li>
-              <button onClick={() => scrollToSection("project-section")} className="hover:text-white text-left">
+              <button onClick={() => scrollToSection("project-section")} className="hover:text-foreground text-left">
                 Project
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection("skill-section")} className="hover:text-white text-left">
+              <button onClick={() => scrollToSection("skill-section")} className="hover:text-foreground text-left">
                 Skill
               </button>
             </li>
             <li>
               <a href={Resume} download="MyResume" target="_blank" rel="noreferrer">
-                <button className="hover:text-white text-left">Resume</button>
+                <button className="hover:text-foreground text-left">Resume</button>
               </a>
             </li>
 
             <li>
               <Link to="services">
-                <button className="hover:text-white text-left">Services</button>
+                <button className="hover:text-foreground text-left">Services</button>
               </Link>
             </li>
 
             <li>
               <Link to="https://calendly.com/bolarinwaajayi/new-meeting">
-                <button className="hover:text-white text-left bg-[#199C16] py-1 px-4  text-white">Book Me</button>
+                <button className="hover:text-foreground text-left bg-[#199C16] py-1 px-4  text-white">Book Me</button>
               </Link>
             </li>
           </ul>
@@ -133,9 +133,9 @@ const Footer = () => {
         {/* Legal */}
         <div className="flex flex-col gap-5">
           <h3 className="font-bold text-base mb-1">Get In Touch</h3>
-          <ul className="flex flex-col gap-4 text-sm font-light text-gray-300">
+          <ul className="flex flex-col gap-4 text-sm font-light text-muted-foreground">
             <li>
-              <button onClick={handlePlaceholderClick} className="hover:text-white text-left">
+              <button onClick={handlePlaceholderClick} className="hover:text-foreground text-left">
                 I'm Avaliable for collaboration
               </button>
             </li>

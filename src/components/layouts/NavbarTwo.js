@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Navbar from './Nav';
+import ThemeToggle from 'components/ui/ThemeToggle';
 
 const NavbarTwo = ({ title = 'BeeC00des' }) => {
   return (
     <header className="text-[10px] flex flex-wrap justify-between items-center px-[15px] md:px-[35px] my-[12px]">
       {/* Title / Logo - Links back to homepage */}
-      <Link to="/" className="text-white cursor-pointer hover:text-[#199C16] transition-colors" style={{ textDecoration: 'none' }}>
+      <Link to="/" className="text-foreground cursor-pointer hover:text-[#199C16] transition-colors" style={{ textDecoration: 'none' }}>
         <h1 className="text">{title}</h1>
       </Link>
 
@@ -15,6 +16,7 @@ const NavbarTwo = ({ title = 'BeeC00des' }) => {
         <div className="text-[#199C16]">
           <Navbar navItem="Services" />
         </div>
+        <ThemeToggle />
       </div>
     </header>
   )

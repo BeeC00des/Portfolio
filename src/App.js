@@ -8,6 +8,7 @@ import Community from './pages/Community';
 import Services from 'pages/services/services';
 import Preloader from './components/Preloader/Preloader';
 import NotFound from './pages/NotFound';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   const [appLoaded, setAppLoaded] = useState(false);
@@ -24,10 +25,10 @@ function App() {
   }, [appLoaded]);
   
   return (
-    <>
+    <ThemeProvider>
       <Preloader onComplete={() => setAppLoaded(true)} />
-      
-      <div 
+
+      <div
         className={`min-h-screen ${
           !appLoaded 
             ? 'translate-y-32 opacity-0 transition-all duration-1000 ease-[cubic-bezier(0.77,0,0.175,1)]' 
@@ -46,7 +47,7 @@ function App() {
           </Routes>
         </Router>
       </div>
-    </>
+    </ThemeProvider>
   );
 }
 
